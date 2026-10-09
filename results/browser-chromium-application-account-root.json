@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-09T15:44:59.590Z",
+  "environment": {
+    "browser": "chromium",
+    "version": "149.0.7827.55",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.7827.55 Safari/537.36",
+    "headless": true,
+    "os": "darwin",
+    "release": "24.6.0",
+    "arch": "arm64",
+    "cpu": "Apple M4 Pro",
+    "logicalCpus": 12,
+    "totalMemoryBytes": 51539607552,
+    "node": "v26.5.0",
+    "powerMode": "not independently recorded",
+    "thermalState": "not instrumented",
+    "crossOriginIsolated": false
+  },
+  "method": {
+    "warm": 1,
+    "cold": 0,
+    "sessions": 3,
+    "warmup": "one unrecorded trial per workload per initialized session",
+    "order": "fixed; no randomization in this initial run",
+    "coldDefinition": "fresh browser context, imported module and disposable fixture setup reported separately; browser process reused",
+    "memory": "Chromium JS heap when exposed; not peak memory or worker/native allocation coverage",
+    "eventLoop": "10 ms timer; no-tick trials cannot estimate maximum blocking",
+    "package": "0.2.1",
+    "applicationCommit": "a103da282e2cec6351f28f04db67b22d16fdd75b"
+  },
+  "sourceFiles": {
+    "webapp/src/lib/crypto/vault-crypto.ts": "cabb93d2e9f724f48a4e662c6f4641ff5fb30b1b07f1cb5c7aa884abec69991f",
+    "webapp/src/lib/crypto/vault-key-grants.ts": "95a60cc6b7fee6133614151fe508d3ed3590bc97412a0e0198ede6465baba825",
+    "webapp/src/lib/crypto/client-crypto.ts": "542c7c41a0e75004dd6ea7f4048172c0b29585b9352ec0dd4dcae623359ed1ce"
+  },
+  "rows": [
+    {
+      "name": "application.account-root",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 0,
+      "ms": 5788.700000047684,
+      "error": null,
+      "heapBefore": 116000000,
+      "heapAfter": 116000000,
+      "eventLoopTicks": 578,
+      "maxObservedTimerGapMs": 11.199999988079071
+    }
+  ]
+}

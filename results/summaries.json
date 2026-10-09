@@ -1,0 +1,56 @@
+{
+  "method": "Linear-interpolated quantiles; deterministic 1000-resample empirical bootstrap over individual trials. Conditional intervals do not account for serial correlation or population/device variability.",
+  "rows": [
+    {
+      "file": "private-lifecycle.json",
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 16.82431250000002,
+      "p95": 26.00066010000015,
+      "medianCI": [
+        15.87012449999986,
+        18.474124999999958
+      ],
+      "p95CI": [
+        24.35415144999988,
+        26.91110835000001
+      ]
+    },
+    {
+      "file": "private-lifecycle.json",
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 24.787541500000316,
+      "p95": 37.31178399999976,
+      "medianCI": [
+        23.56681249999974,
+        26.766957999999704
+      ],
+      "p95CI": [
+        35.338420564999865,
+        43.3732833000004
+      ]
+    },
+    {
+      "file": "private-lifecycle.json",
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 49.64858350000031,
+      "p95": 65.50204345000066,
+      "medianCI": [
+        48.30616649999956,
+        52.975916999999754
+      ],
+      "p95CI": [
+        59.58354200000031,
+        68.3269276999999
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-09T15:41:46.046Z",
+  "node": "v26.5.0",
+  "package": "@drvillo/webcrypto-seal@0.2.1",
+  "rows": [
+    {
+      "name": "object round trip",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "wrong generation rejected",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "wrong context rejected",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "changed ciphertext rejected",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "public-key-only replacement accepted",
+      "status": "passed",
+      "classification": "expected limitation; no uploader authentication"
+    },
+    {
+      "name": "package wrapper round trip",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "independent package key rejected",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "retained package key still opens retained wrapper",
+      "status": "passed",
+      "classification": "expected limitation; no erasure by service revocation"
+    },
+    {
+      "name": "HKDF empty salt equals 32 zero bytes",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "BLAKE2b-24 differs from truncated BLAKE2b-64",
+      "status": "passed",
+      "classification": "correctness example"
+    },
+    {
+      "name": "wrong verifier key rejected",
+      "status": "passed",
+      "classification": "correctness example"
+    }
+  ],
+  "vector": {
+    "plaintext": "b3JpZ2luYWwgZGlzcG9zYWJsZSBkb2N1bWVudA",
+    "publicKey": "6yckUGQNgOj7snH2vK11LnBe2FipzyKG4AePckx4GUk",
+    "privateKey": "nWAzJdwPBeHNjorvTA77iiXfPy1LniB9PPjqCuokmKU",
+    "keyId": "XKM7DfpCfhckCZ7awJKp_ANnoo_0UtHGH_tdcIUlE64",
+    "ciphertext": "onj20KLFM49XvTX9GwGLS9J3hMTWtPE7Ywvs8pLL2uh-raMcve89XpvGT4DnZz0Lo5lW2aPS0iI",
+    "sealedKey": "v3.sb1.XKM7DfpCfhckCZ7awJKp_ANnoo_0UtHGH_tdcIUlE64.aJC01g1xbxxAWQYXPq3-tpzSjxJ69VSR-4j3r-6jMkR8rnmNBx6s7JQpVQy-f22zp1_Ku28BU6T6i9_t5YEeWM35QA86SUPNoPW-qODJCoAXONjEsLaszFI3CsguuKfR-rti_YWkSb6K8oj1qQDwjNuE3gDcxIvEARSadZUCyvb7xy-6z4Joc54jsKWDabNslCT3Bpfe-sCzUAXZvwx1C6wtIV1OyYa6CDJmX4SKIwv-h96vXaVGRHtADs1USew"
+  },
+  "scope": "actual published library; disposable random keys; no application routes exercised"
+}

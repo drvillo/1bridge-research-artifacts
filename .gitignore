@@ -1,0 +1,11 @@
+node_modules/
+.private*
+.env*
+!.env.example
+.tmp/
+papers/*.aux
+papers/*.bbl
+papers/*.blg
+papers/*.log
+papers/*.out
+papers/*.toc

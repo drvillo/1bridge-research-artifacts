@@ -1,0 +1,2454 @@
+{
+  "date": "2026-10-09T15:52:47.116Z",
+  "applicationCommit": "a103da282e2cec6351f28f04db67b22d16fdd75b",
+  "database": "disposable local PostgreSQL; all committed migrations; empty auth.users bootstrap",
+  "authentication": "service function authorization against real membership/grant rows; no full Supabase login or browser journey",
+  "rows": [
+    {
+      "name": "complete generation activation",
+      "status": "passed",
+      "classification": "satisfied property",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    },
+    {
+      "name": "activation idempotency",
+      "status": "passed",
+      "classification": "satisfied property",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    },
+    {
+      "name": "stale roster rejected",
+      "status": "passed",
+      "classification": "satisfied property",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    },
+    {
+      "name": "invalid envelope leaves generation state unchanged",
+      "status": "passed",
+      "classification": "satisfied property",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    },
+    {
+      "name": "duplicate recipients activate an incomplete persisted grant set",
+      "status": "passed",
+      "classification": "confirmed implementation defect; exact-roster coverage fails",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    },
+    {
+      "name": "stored passkey wrap and rotation filtering",
+      "status": "passed",
+      "classification": "satisfied storage/filter property; PRF fixture, no authenticator ceremony",
+      "layer": "real application functions and committed migrations on disposable PostgreSQL"
+    }
+  ],
+  "trials": [
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 0,
+      "ms": 26.944041999999968,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 1,
+      "ms": 26.90937500000001,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 2,
+      "ms": 24.793000000000006,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 3,
+      "ms": 18.824209000000053,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 4,
+      "ms": 13.868333000000007,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 5,
+      "ms": 17.34333300000003,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 6,
+      "ms": 18.917749999999955,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 7,
+      "ms": 18.29108300000007,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 8,
+      "ms": 19.76195800000005,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 9,
+      "ms": 18.474124999999958,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 10,
+      "ms": 10.631624999999985,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 11,
+      "ms": 11.451583000000028,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 12,
+      "ms": 26.28475000000003,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 13,
+      "ms": 24.626999999999953,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 14,
+      "ms": 27.10591599999998,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 15,
+      "ms": 25.248458000000028,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 16,
+      "ms": 26.386708999999996,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 17,
+      "ms": 20.602833000000032,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 18,
+      "ms": 22.491375000000062,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 19,
+      "ms": 20.956084000000033,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 20,
+      "ms": 23.605916999999977,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 21,
+      "ms": 22.387417000000028,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 22,
+      "ms": 24.18208299999992,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 23,
+      "ms": 20.846374999999853,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 24,
+      "ms": 20.18362500000012,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 25,
+      "ms": 21.26195900000016,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 26,
+      "ms": 21.399041000000125,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 27,
+      "ms": 23.694500000000062,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 28,
+      "ms": 24.339790999999877,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 29,
+      "ms": 25.32983400000012,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 30,
+      "ms": 16.205332999999882,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 31,
+      "ms": 11.464249999999993,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 32,
+      "ms": 20.488417000000027,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 33,
+      "ms": 18.791375000000016,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 34,
+      "ms": 15.915082999999868,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 35,
+      "ms": 18.274875000000065,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 36,
+      "ms": 18.654416999999967,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 37,
+      "ms": 22.72783299999992,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 38,
+      "ms": 20.88479200000006,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 39,
+      "ms": 25.421540999999934,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 40,
+      "ms": 23.35891599999991,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 41,
+      "ms": 25.98570800000016,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 42,
+      "ms": 22.342709000000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 43,
+      "ms": 22.910750000000007,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 44,
+      "ms": 16.065292,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 45,
+      "ms": 16.75887499999999,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 46,
+      "ms": 13.661084000000074,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 47,
+      "ms": 15.349500000000035,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 48,
+      "ms": 18.085915999999997,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 49,
+      "ms": 16.01516599999991,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 50,
+      "ms": 13.999832999999853,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 51,
+      "ms": 14.005083000000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 52,
+      "ms": 12.411374999999907,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 53,
+      "ms": 12.881374999999935,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 54,
+      "ms": 13.704459000000043,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 55,
+      "ms": 13.143958999999995,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 56,
+      "ms": 14.656541999999945,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 57,
+      "ms": 21.313083000000006,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 58,
+      "ms": 18.171291999999994,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 59,
+      "ms": 15.329333000000133,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 60,
+      "ms": 13.267917000000125,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 61,
+      "ms": 14.878917000000001,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 62,
+      "ms": 19.073540999999977,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 63,
+      "ms": 16.88975000000005,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 64,
+      "ms": 12.614000000000033,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 65,
+      "ms": 14.98783299999991,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 66,
+      "ms": 14.628832999999986,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 67,
+      "ms": 13.771375000000262,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 68,
+      "ms": 13.07791700000007,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 69,
+      "ms": 16.694041000000198,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 70,
+      "ms": 12.03729199999998,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 71,
+      "ms": 9.5334170000001,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 72,
+      "ms": 14.70758399999977,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 73,
+      "ms": 14.29845800000021,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 74,
+      "ms": 11.958082999999988,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 75,
+      "ms": 18.038332999999966,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 76,
+      "ms": 16.033332999999857,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 77,
+      "ms": 15.667292000000089,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 78,
+      "ms": 15.016708000000108,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 79,
+      "ms": 12.755833000000166,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 80,
+      "ms": 14.525791000000027,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 81,
+      "ms": 17.629417000000103,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 82,
+      "ms": 13.719292000000223,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 83,
+      "ms": 16.14949999999999,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 84,
+      "ms": 18.013916999999765,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 85,
+      "ms": 14.806041000000278,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 86,
+      "ms": 22.431957999999668,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 87,
+      "ms": 19.472875000000386,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 88,
+      "ms": 14.455541999999696,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 89,
+      "ms": 18.695999999999913,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 90,
+      "ms": 22.771499999999833,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 91,
+      "ms": 15.249624999999924,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 92,
+      "ms": 13.18899999999985,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 93,
+      "ms": 11.404124999999567,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 94,
+      "ms": 9.824625000000196,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 95,
+      "ms": 16.01770800000031,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 96,
+      "ms": 15.725082999999813,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 97,
+      "ms": 16.306082999999944,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 98,
+      "ms": 12.500250000000051,
+      "error": null
+    },
+    {
+      "name": "application.activation.1",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 99,
+      "ms": 14.895750000000135,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 0,
+      "ms": 46.68595800000003,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 1,
+      "ms": 32.83870900000011,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 2,
+      "ms": 35.30841599999985,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 3,
+      "ms": 30.29145900000003,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 4,
+      "ms": 24.51616600000034,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 5,
+      "ms": 35.911125000000084,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 6,
+      "ms": 30.83600000000024,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 7,
+      "ms": 32.60229100000015,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 8,
+      "ms": 30.499917000000096,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 9,
+      "ms": 32.169374999999945,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 10,
+      "ms": 34.68129200000021,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 11,
+      "ms": 30.051124999999956,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 12,
+      "ms": 32.685917000000245,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 13,
+      "ms": 31.435917000000245,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 14,
+      "ms": 35.80641699999978,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 15,
+      "ms": 37.77329099999997,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 16,
+      "ms": 31.994374999999764,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 17,
+      "ms": 31.995790999999826,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 18,
+      "ms": 27.571833000000424,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 19,
+      "ms": 29.625166999999692,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 20,
+      "ms": 26.766957999999704,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 21,
+      "ms": 28.747208000000228,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 22,
+      "ms": 22.450458000000253,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 23,
+      "ms": 19.059458000000177,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 24,
+      "ms": 23.39154099999996,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 25,
+      "ms": 33.253749999999854,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 26,
+      "ms": 32.6965839999998,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 27,
+      "ms": 27.606125000000247,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 28,
+      "ms": 22.58483299999989,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 29,
+      "ms": 27.27758300000005,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 30,
+      "ms": 18.349874999999884,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 31,
+      "ms": 20.430875000000015,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 32,
+      "ms": 16.97504200000003,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 33,
+      "ms": 19.582834000000275,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 34,
+      "ms": 19.40899999999965,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 35,
+      "ms": 20.934583000000202,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 36,
+      "ms": 20.69904200000019,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 37,
+      "ms": 19.976082999999562,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 38,
+      "ms": 20.7670420000004,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 39,
+      "ms": 19.75854200000049,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 40,
+      "ms": 35.76850000000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 41,
+      "ms": 17.37787500000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 42,
+      "ms": 14.926750000000538,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 43,
+      "ms": 22.188750000000255,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 44,
+      "ms": 25.792875000000095,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 45,
+      "ms": 30.819375000000036,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 46,
+      "ms": 27.159082999999555,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 47,
+      "ms": 28.96454100000028,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 48,
+      "ms": 24.653542000000016,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 49,
+      "ms": 43.22100000000046,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 50,
+      "ms": 23.492999999999483,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 51,
+      "ms": 23.243666999999732,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 52,
+      "ms": 37.38445899999988,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 53,
+      "ms": 23.085792000000765,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 54,
+      "ms": 25.279833999999937,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 55,
+      "ms": 23.900958999999602,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 56,
+      "ms": 23.733334000000468,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 57,
+      "ms": 22.197457999999642,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 58,
+      "ms": 22.610834000000068,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 59,
+      "ms": 37.307958999999755,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 60,
+      "ms": 37.27300000000014,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 61,
+      "ms": 34.900040999999874,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 62,
+      "ms": 32.6269170000005,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 63,
+      "ms": 22.12958400000025,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 64,
+      "ms": 25.189292000000023,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 65,
+      "ms": 24.515583000000333,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 66,
+      "ms": 46.26666599999953,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 67,
+      "ms": 19.438750000000255,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 68,
+      "ms": 36.32054199999948,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 69,
+      "ms": 22.858500000000276,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 70,
+      "ms": 22.05987499999992,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 71,
+      "ms": 25.041540999999597,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 72,
+      "ms": 24.921541000000616,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 73,
+      "ms": 23.900416999999834,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 74,
+      "ms": 19.43620800000008,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 75,
+      "ms": 23.982042000000547,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 76,
+      "ms": 21.248459000000366,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 77,
+      "ms": 20.221833000000515,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 78,
+      "ms": 25.043416999999863,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 79,
+      "ms": 22.827166000000034,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 80,
+      "ms": 20.211040999999568,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 81,
+      "ms": 21.824499999999716,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 82,
+      "ms": 20.6748749999997,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 83,
+      "ms": 20.768707999999606,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 84,
+      "ms": 20.33337499999925,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 85,
+      "ms": 20.14258299999983,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 86,
+      "ms": 25.63116699999955,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 87,
+      "ms": 26.66229199999998,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 88,
+      "ms": 23.726542000000336,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 89,
+      "ms": 23.507540999999947,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 90,
+      "ms": 23.626083999999537,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 91,
+      "ms": 17.579875000000357,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 92,
+      "ms": 28.809124999999767,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 93,
+      "ms": 21.218457999999373,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 94,
+      "ms": 24.3139170000004,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 95,
+      "ms": 31.198041999999987,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 96,
+      "ms": 27.82445800000005,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 97,
+      "ms": 25.18554200000017,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 98,
+      "ms": 22.83325000000059,
+      "error": null
+    },
+    {
+      "name": "application.activation.10",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 99,
+      "ms": 28.39183299999968,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 0,
+      "ms": 59.67958300000009,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 1,
+      "ms": 54.782874999999876,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 2,
+      "ms": 50.20958400000018,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 3,
+      "ms": 41.50537499999973,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 4,
+      "ms": 54.72125000000051,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 5,
+      "ms": 51.8924590000006,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 6,
+      "ms": 41.926666000000296,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 7,
+      "ms": 50.668915999999626,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 8,
+      "ms": 51.86529200000041,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 9,
+      "ms": 46.26958399999967,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 10,
+      "ms": 44.26458300000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 11,
+      "ms": 39.204125000000204,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 12,
+      "ms": 43.477624999999534,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 13,
+      "ms": 56.92674999999963,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 14,
+      "ms": 50.077541999999994,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 15,
+      "ms": 53.505583000000115,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 16,
+      "ms": 50.551541000000725,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 17,
+      "ms": 47.75225000000046,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 18,
+      "ms": 45.25708399999985,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 19,
+      "ms": 47.65549999999985,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 20,
+      "ms": 47.82591599999978,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 21,
+      "ms": 47.35216600000058,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 22,
+      "ms": 45.92045899999903,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 23,
+      "ms": 45.37304200000108,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 24,
+      "ms": 41.710417000000234,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 25,
+      "ms": 84.5737079999999,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 26,
+      "ms": 62.2856670000001,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 27,
+      "ms": 53.75008399999933,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 28,
+      "ms": 50.63370799999939,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 29,
+      "ms": 65.49533300000076,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 30,
+      "ms": 56.21900000000096,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 31,
+      "ms": 57.001666000000114,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 32,
+      "ms": 53.65887499999917,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 0,
+      "trial": 33,
+      "ms": 55.86787499999991,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 34,
+      "ms": 54.84654199999932,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 35,
+      "ms": 56.382000000001426,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 36,
+      "ms": 67.47183399999994,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 37,
+      "ms": 58.78254100000049,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 38,
+      "ms": 47.18437499999891,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 39,
+      "ms": 46.157249999998385,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 40,
+      "ms": 47.11262500000157,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 41,
+      "ms": 40.82416699999885,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 42,
+      "ms": 57.13550000000032,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 43,
+      "ms": 47.343291999999565,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 44,
+      "ms": 61.05374999999913,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 45,
+      "ms": 54.51166699999885,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 46,
+      "ms": 46.85854199999994,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 47,
+      "ms": 48.796542000000045,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 48,
+      "ms": 59.58354200000031,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 49,
+      "ms": 39.47554200000013,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 50,
+      "ms": 47.79541599999902,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 51,
+      "ms": 42.36845799999901,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 52,
+      "ms": 41.08129199999894,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 53,
+      "ms": 45.498499999999694,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 54,
+      "ms": 57.79862499999945,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 55,
+      "ms": 56.85941599999933,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 56,
+      "ms": 49.47454099999959,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 57,
+      "ms": 54.90087499999936,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 58,
+      "ms": 45.18933300000026,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 59,
+      "ms": 52.975916999999754,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 60,
+      "ms": 40.5931670000009,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 61,
+      "ms": 52.93208299999969,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 62,
+      "ms": 47.775792000000365,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 63,
+      "ms": 49.62433299999975,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 64,
+      "ms": 41.69916600000033,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 65,
+      "ms": 94.27595899999869,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 66,
+      "ms": 48.248499999999694,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 1,
+      "trial": 67,
+      "ms": 57.830707999999504,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 68,
+      "ms": 67.18029100000058,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 69,
+      "ms": 56.81825000000026,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 70,
+      "ms": 54.84887499999968,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 71,
+      "ms": 55.553125000000364,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 72,
+      "ms": 49.29041700000016,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 73,
+      "ms": 58.65625,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 74,
+      "ms": 65.62954199999876,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 75,
+      "ms": 49.014916999998604,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 76,
+      "ms": 56.71574999999939,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 77,
+      "ms": 57.47991600000023,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 78,
+      "ms": 49.672834000000876,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 79,
+      "ms": 44.69616700000006,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 80,
+      "ms": 45.10554100000081,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 81,
+      "ms": 58.1299999999992,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 82,
+      "ms": 53.872542000000976,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 83,
+      "ms": 37.802082999998674,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 84,
+      "ms": 60.973541999999725,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 85,
+      "ms": 56.05595899999935,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 86,
+      "ms": 59.98579199999949,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 87,
+      "ms": 45.851833000000624,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 88,
+      "ms": 45.11012500000106,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 89,
+      "ms": 45.0887500000008,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 90,
+      "ms": 43.643958000000566,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 91,
+      "ms": 48.812959000000774,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 92,
+      "ms": 41.319916999998895,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 93,
+      "ms": 54.39495800000077,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 94,
+      "ms": 43.55608299999949,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 95,
+      "ms": 48.98541699999987,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 96,
+      "ms": 48.36383299999943,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 97,
+      "ms": 46.05562500000087,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 98,
+      "ms": 48.49583299999904,
+      "error": null
+    },
+    {
+      "name": "application.activation.50",
+      "mode": "initialized",
+      "session": 2,
+      "trial": 99,
+      "ms": 42.129249999999956,
+      "error": null
+    }
+  ],
+  "limitations": [
+    "No live email delivery",
+    "No password-rotation route persistence check yet",
+    "No complete retrieval-route revocation coverage",
+    "No authenticated WebAuthn PRF ceremony",
+    "Activation timings include authorization and transaction; no phase instrumentation or network timing",
+    "Initialized activation contexts share a process and database; session labels are trial blocks, not fresh processes"
+  ]
+}

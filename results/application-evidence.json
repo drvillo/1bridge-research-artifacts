@@ -1,0 +1,1393 @@
+{
+  "applicationCommit": "a103da282e2cec6351f28f04db67b22d16fdd75b",
+  "whitepaperCommit": "1e918807acd74d88e8b36de4d746bf8d88681c23",
+  "date": "2026-10-09",
+  "node": "v26.5.0",
+  "vitest": "3.2.7",
+  "package": "@drvillo/webcrypto-seal@0.2.1",
+  "files": {
+    "webapp/pnpm-lock.yaml": "2902757c533eaa3b4d35de190ab6ffcd3c37c487cd23ac3ca4302ed97576ea80",
+    "webapp/prisma/schema.prisma": "e6cbc488536c60485e474c01502f0512269e2b72272ebb979c15c69423212359",
+    "webapp/src/app/api/documents/[id]/download-info/route.ts": "d58e7f313c836fdb9fb33659b04dcfc0ddd34cd53b15b9b6c215b8da9c478fc7",
+    "webapp/src/app/api/documents/[id]/route.ts": "f4416811af4eddcf081ff7da625078cfd420c97334e81c52b0b974374459e297",
+    "webapp/src/app/api/documents/commit-upload/route.ts": "c067334973fbc0d7fe69e84228559820ba7b0382c37cdd5f721c0aff3ca0cb9e",
+    "webapp/src/app/api/documents/prepare-upload/route.ts": "9770f3b4ac0caa8f5e1f0d1d598316c5a79e17fea5454ce95181fdd2082c2835",
+    "webapp/src/app/api/documents/route.ts": "c9ce8f24a9654d7b49fae7658508af190a57fa3138fa0a429205c2f4262834b8",
+    "webapp/src/app/api/request/vendor/[token]/complete/route.ts": "ab964a581386138baa6edf27c0c5cedfc3c956ca9c7ebd17a6ae8a7a92d304ac",
+    "webapp/src/app/api/request/vendor/[token]/metadata/route.ts": "9c5a75fecbde2a41b608011cadd24630e4aa2a28affd11e56942ff5877f8d07e",
+    "webapp/src/app/api/request/vendor/[token]/otp/send/route.ts": "bb9ec941f6d4b7bc11b3246aae1ea74254bd9d7bbce49e38cb489dc5bd2079aa",
+    "webapp/src/app/api/request/vendor/[token]/otp/verify/route.ts": "bf3e921a29b76c9e348f028010045ad255774c5b843b76879bfadacc6c1d10f8",
+    "webapp/src/app/api/request/vendor/[token]/uploads/[uploadId]/route.ts": "6229d3e6f6744645f834f6baa94d46671515ef35e66bc9d7a93b83e4c7393e0a",
+    "webapp/src/app/api/request/vendor/[token]/uploads/commit/route.ts": "e7f8c4bfa663b0a2b65adc1bc270273d6d597560075a9226a67cf329e74a0129",
+    "webapp/src/app/api/request/vendor/[token]/uploads/prepare/route.ts": "a77db2449b63fa1bc9bb0f255b249f2341ba4eef50ceb233238604df979da8bc",
+    "webapp/src/app/api/share-requests/[id]/approve/route.ts": "d9e39be3d3ef6ab68743336e5ca9be2e312c33ced5e2a7b793c26bd57c6313d0",
+    "webapp/src/app/api/share-requests/[id]/reject/route.ts": "0fea64b37777269ee50ab9cfb2ed5c33ebd033890a131b7ecf708153030bfa7c",
+    "webapp/src/app/api/share-requests/[id]/route.ts": "b19676153c6c36e5fe70879c41914f5a23344556efd4749bc0a7c549d97ff641",
+    "webapp/src/app/api/share-requests/route.ts": "738a9edb9e2fb0cb8ed42e719eef40d700b6e9a835fe9715ac94245ce67de3ed",
+    "webapp/src/app/api/signing/vendor/[token]/certificate/route.ts": "d4732fd20e95cfeb6153bd1a2ce54ea1cf9ee08cfbbcd17069138ed21193cae2",
+    "webapp/src/app/api/signing/vendor/[token]/complete/route.ts": "363d1d799049022d9e8be208b9c367f315c237dae3027210f0860568efae0a0b",
+    "webapp/src/app/api/signing/vendor/[token]/document/route.ts": "4ea1c5b35921d7aa898d5665c43a20cc0179adae134d55b8292f16f19c23a353",
+    "webapp/src/app/api/signing/vendor/[token]/link-info/route.ts": "2628740149e8c6ce6762f230bccd487a80f1315c707008092bc5c7e479ad9e91",
+    "webapp/src/app/api/signing/vendor/[token]/otp/send/route.ts": "a22447e02338e9fd8a9852d1fc8449e2bf5d7cd2bb58fbca030d2d78772cee50",
+    "webapp/src/app/api/signing/vendor/[token]/otp/verify/route.ts": "8786bb5ae180492af4f3227291becee2588baf5e876b854254289332b2660719",
+    "webapp/src/app/api/vault/passkey/[id]/route.ts": "ea2796cce85112d8887c35151ea3a27aa036ef673269a15a3cb73d26d9dbed53",
+    "webapp/src/app/api/vault/passkey/auth/options/route.ts": "0474414ddcf867966c3b83be4c07a6e54409fbaabdfefafbb7df1789047e907e",
+    "webapp/src/app/api/vault/passkey/auth/verify/route.ts": "115a4df20aca44a18bda804c66856949f32de65466f03312dbae4acb60ca8624",
+    "webapp/src/app/api/vault/passkey/register/options/route.ts": "011bd01737303f035cd6580c7d53f204f3145f514dd25c385eaf04f49e1f09db",
+    "webapp/src/app/api/vault/passkey/register/verify/route.ts": "0d71def948e3541f77fd572368c895a0b59793e0a1c50b7fc7e4cf1fcfdbb116",
+    "webapp/src/app/api/vault/passkey/route.ts": "14d0643c5e0d07626fa7de2ae941e519d382d86d2230437e4d4dae4b4698cf34",
+    "webapp/src/app/api/vault/rotate-master-key/route.ts": "00b1ee645c17aa01f526bb64d446b213ea42fa1de9ed31642bb07c098a532974",
+    "webapp/src/app/api/vendor/[token]/audit/route.ts": "1eab864eab82972d4f946ea23cfa73ca79975f75471c9ac9ef544a6a0b04abfa",
+    "webapp/src/app/api/vendor/[token]/ciphertext-url/route.ts": "07cca81c59fc4c8d19605b03bb86f214ae3d7fc7992743002bb6dbee21aacc58",
+    "webapp/src/app/api/vendor/[token]/link-info/route.ts": "93c6e94c561a23ab9c43cf73045d5f6e7751d094fb1c7bc666d4dc250e940a38",
+    "webapp/src/app/api/vendor/[token]/otp/send/route.ts": "4264c0c35b12d4ab8e21ce6136f03904c783eb00e496f64279755367251d7ba6",
+    "webapp/src/app/api/vendor/[token]/otp/verify/route.ts": "4941f990306a194e2f0d28a5e1e31711024857152aca74fb472264854656b54c",
+    "webapp/src/app/api/vendor/[token]/resources/route.ts": "eb1d9a88e4cc964f2c564a92c4433b5411c7e1a7b01eaf5e0cd1e1c1ce7838a0",
+    "webapp/src/app/api/waitlist/request/route.ts": "89662f18e846e2bfecd964ba9e32be3a452df48d75790f3b635c3a7c0e96a98e",
+    "webapp/src/lib/attestation/certificate-download.ts": "09fcac50be4b9473707e44b0b54d3323c89114557d232d050ae81b880959737b",
+    "webapp/src/lib/attestation/certificate-lifecycle.ts": "5511f87f367fe4be10a387449a52e05767eb03bde853bccbab5dcb1f9319051c",
+    "webapp/src/lib/attestation/certificate-notifications.ts": "d1d9f274ef8032107894422e8ec3966a59c8e2f161d2100a79687b3a2d040d27",
+    "webapp/src/lib/attestation/certificate.ts": "71400716bf9dbc9d7188343c4fe318200b66c2622a0cb4a93d0bc4a20073b538",
+    "webapp/src/lib/attestation/service.ts": "f6e0052609436493f7d1960ab0f78bb53dce4c797234445743208107e83c5989",
+    "webapp/src/lib/attestation/timestamps.ts": "3292c1f0971e9215b2b6a18e5faa6dd061c62c93354ca1c672c37d3d29027733",
+    "webapp/src/lib/attestation/verify-urls.ts": "c6794a4e820155cbfd000f4d189ee747420f0dd11074f1896d06c7d99cf472a4",
+    "webapp/src/lib/audit/activity-feed-merge.ts": "93e73bab7574cf1133352d5c70041f553d7742816adae028893d53367c5f45dc",
+    "webapp/src/lib/audit/audit-client.ts": "f5153b9b13ad3e88dba9bab102ef1adb69a8d7d78e1e4f96227373f1a0da7b68",
+    "webapp/src/lib/audit/audit-log.ts": "288dfede158ae2baaf918e5555851f116d1c8a12ade65b435ba0c166e5b22b0f",
+    "webapp/src/lib/audit/audit-scope.ts": "076f8cb3fbfa892b9d10ee1cdd78fdb182a9b56874d319acaadb994edab60ad2",
+    "webapp/src/lib/audit/audit-visibility.ts": "9d373d7657c44c40a2ecf90935524cc82dee177b2c1a4eefc48694ae95586be3",
+    "webapp/src/lib/audit/counterparty-label.ts": "b46df6525058e780488826c0eb2372be915b00ccc932351a8495daa7d057fd1b",
+    "webapp/src/lib/audit/vault-audit-access.ts": "0ed08ac280ec6022b0734654fe15c7abcb70e981f00fe3865e1043aeaef8a0e8",
+    "webapp/src/lib/audit/workspace-lifecycle-audit.ts": "0cd87b2a23ef7115c5365c22c512a1df54c7fb71ade6a37b0cbc847271935bbb",
+    "webapp/src/lib/auth/account-provisioning.ts": "f9cbe34d8db77b2cafdc5cb5b0c493d0973e74ff8afd43a1de1c03bf1d6167b2",
+    "webapp/src/lib/auth/admin.ts": "4379c140614f8cc939114d3515f53d0bd92d30671e1ba94ccca2d8e1a947dd9c",
+    "webapp/src/lib/auth/auth-continuation-server.ts": "25113256021818e3287d3c1f7b75248478dd67fec19b654b7cfb167d3550ccbf",
+    "webapp/src/lib/auth/auth-continuation.ts": "01d95f011fd9ad192c599dc75e60c7902d97d5f9fb3f70f608f0f0aeaab5c6f6",
+    "webapp/src/lib/auth/auth-session-metadata.ts": "0673a92c2ab5e3f650dba11b46d6da7f779eb80b4433424f5cdb5dcfc4e3f577",
+    "webapp/src/lib/auth/authorization.ts": "6f1bd18e827a65311e9afd9bafce4ec67c13a81e1a311e6f96157e0444a9e6b4",
+    "webapp/src/lib/auth/empty-vault-types.ts": "9e7f501affa9558dcb78a43f3bbe08e473bc3d66d84e981ce0f86d30a3e50bd5",
+    "webapp/src/lib/auth/get-auth-user.ts": "c8543534b806d591d7354235e1789daa8104c33c887d0f81e5a461214dcca4af",
+    "webapp/src/lib/auth/invitee-provisioning.ts": "29976e649d0560c9ab6ad49a877ab3e1829e9a6f1a81a77cbb50a0a1f7076c4c",
+    "webapp/src/lib/auth/owner-authority-inventory.ts": "57680822e69348b0e469cae9a595c425104f9b5074e1ee2404aa985235f96de2",
+    "webapp/src/lib/auth/owner-authority-manifest-data.ts": "33bf82a045165bdb9ed6b31be2483a7efa23e7e79a753efafbf566519a67a119",
+    "webapp/src/lib/auth/redirect-urls.ts": "50475418cf2305314a889ab821d2952c5f0023f0d75547cf58adbe223480d116",
+    "webapp/src/lib/auth/revoked-access-client.ts": "6b19180c6d79f04b97720e40a480c36c5761b5b519039dea4203847da995e89f",
+    "webapp/src/lib/auth/session-provisioning-context.ts": "4d0f402ff7ce83bdad586e5348277e92f714389966a839cde9991998bee7baed",
+    "webapp/src/lib/auth/session-provisioning.ts": "850d0201bf512572441caa939acb5a975c3f29d3459b18b1fbeef8ff0b2f0f88",
+    "webapp/src/lib/auth/supabase-admin-users.ts": "75bae479394ede7a178f839bab20cc64a264002b1339ebe93ef8aed25ac6af00",
+    "webapp/src/lib/auth/user-email-cache.ts": "e74a89ba429a2ba032a0741f45a4e819bd2874a9be7c765e941043ad01c825a1",
+    "webapp/src/lib/auth/user-profile.ts": "7a6be75c50952a866accdf5fded35eccebd5e01184d3502260c88ee18bf6ec7c",
+    "webapp/src/lib/auth/vendor-email-hash.ts": "3b253358294dde2cf3be164656ad4be2b62fb0ce30e5b45c6e08835a98642860",
+    "webapp/src/lib/auth/vendor-session.ts": "377d98dac9e7bb7816d69a9e3d3e7b0d613a5f74e3fb03ac510f96ac195fdd81",
+    "webapp/src/lib/auth/workspace-authorization.ts": "f7d5900f13fd17eb9bd99b9050d2c6b6e4965a921a72f91e0d4b6983d98964f2",
+    "webapp/src/lib/crypto/access-key.ts": "37a014c586f44d6fcc667aac28bc5d022d4d28e58e996a758721bcf73e3a0cab",
+    "webapp/src/lib/crypto/account-root-client.ts": "9c3dc31d9821d698fd80314374a22f29ec4b7e0fbde0e3acc8d9c0c3e653e4ee",
+    "webapp/src/lib/crypto/account-root-password-policy.ts": "46985395c09ae97441946e2a444d9b531658849029ed9dad78ea644b309e7641",
+    "webapp/src/lib/crypto/account-root-rotation-client.ts": "90cc37fe2b616b9956f419be1fb26f4647c81861774d6e7028ea0268e103888a",
+    "webapp/src/lib/crypto/account-root-rotation.ts": "5871aa317104d2b8e02e609a041031a0606f17cf7a1259b37a631f5a05ea8ddc",
+    "webapp/src/lib/crypto/account-root-verifier.ts": "c895b5509523ef6652e87a589d3a2df6856542782efa93c1633d63841c51cb69",
+    "webapp/src/lib/crypto/account-root-workspace-session.ts": "f5010cf5973c460aa91ef9974ef790b9ea2e5aa7214a975c35cf0a243259c253",
+    "webapp/src/lib/crypto/account-root.ts": "05559845a5a506a899c25a29ec864086ac542621a68c388eecd36d3f012633c2",
+    "webapp/src/lib/crypto/client-crypto.ts": "542c7c41a0e75004dd6ea7f4048172c0b29585b9352ec0dd4dcae623359ed1ce",
+    "webapp/src/lib/crypto/envelope-format.ts": "7aeb62cce95236a3ede7be555cd4415bb7b520ddd333234067a7bdedcc8a3f05",
+    "webapp/src/lib/crypto/kdf-params.ts": "ab622e515c36cfb4cf20f6f74925d33a05d71c87e7e7f9976df29835b213f332",
+    "webapp/src/lib/crypto/membership-key-proof.ts": "d4d8286b2fd728ac06317c6cf065c1309e94584ba955ac7df55e1055ba943a92",
+    "webapp/src/lib/crypto/membership-keys.ts": "c6e8a2b21043e37a0ffce29613335512f7e8cd5b54800594f874a6166177b5e9",
+    "webapp/src/lib/crypto/otp.ts": "cb3038ac2ac5c372de63a263d841cc6a7fc5a8bdc8df476b03f24ad974279f37",
+    "webapp/src/lib/crypto/passkey-crypto.ts": "ec90583749ad70317630e8c6011b2a01e401a44936813241880e534ddad5a46b",
+    "webapp/src/lib/crypto/sealed-box.ts": "6cf68667e6faa4800460a7e1503ae894666410c6f9df881273cc5b1e6e870a28",
+    "webapp/src/lib/crypto/token-hash.ts": "b58a8badf3b725189fd6a54b4597e9015dd6bd7865a598f883b67af852c9810c",
+    "webapp/src/lib/crypto/vault-crypto.ts": "cabb93d2e9f724f48a4e662c6f4641ff5fb30b1b07f1cb5c7aa884abec69991f",
+    "webapp/src/lib/crypto/vault-key-grants.ts": "95a60cc6b7fee6133614151fe508d3ed3590bc97412a0e0198ede6465baba825",
+    "webapp/src/lib/crypto/vault-key-material.ts": "d640b578d9bf75f7093394f927d926a470c07daab2f0188455bb66112f378edd",
+    "webapp/src/lib/crypto/web-crypto-context.ts": "668f60176d2c05dec66b94b5bc9ad07e794e6e7a8520ac18de12f73c890fc46e",
+    "webapp/src/lib/crypto/webauthn.ts": "4b91d112b400b0a2ae7ca4c1653494e18f6485361cac5f70971e26c8dbb5816e",
+    "webapp/src/lib/email/delivery-service.ts": "9c58005152372117b297efef1f7b3ca91843305c81142d40bec30f7da1fa5ada",
+    "webapp/src/lib/email/email-message.ts": "e052818f57badab1798eee6c8ba053a2d8508e17e83f58c4c13d4fce8b691507",
+    "webapp/src/lib/email/email-messages.ts": "83319dd8234995d71c7a6e2ca73306024214f68aa26dd2403e0bbbd716843a47",
+    "webapp/src/lib/email/email-template.ts": "2c0564a9aa644b915605f12805eb430e6b224281e3b7158aa098b06f42639fcd",
+    "webapp/src/lib/email/mailtrap-provider.ts": "9031b547eaa741c0f3fe51fedbd067b028bcf1d1180a80f9069992d154860f34",
+    "webapp/src/lib/email/mailtrap.ts": "68dab23201f692ab6495048d995a0d025b19db263f4eae4f8d4a3cefa400b31c",
+    "webapp/src/lib/email/test-outbox.ts": "367300105dac7c5d1555abb4b91d865bdeeae9b5ca5da0416db808d5ca6340ef",
+    "webapp/src/lib/email/workspace-invite-delivery.ts": "e124bfdd74bfce6eadfcecd63a8f5677aa3e8553bb32b7a36ea5d8a7c28ad79f",
+    "webapp/src/lib/passkeys/capability.ts": "e5892420efe0deb1ab4ef7b8326c2f8a2ca478b1a54aba9ed50ab41c1547e151",
+    "webapp/src/lib/passkeys/enroll-client.ts": "625b747163878e3fefedc38ddf2a22a42530c535ea281fba1c31d130376cdad7",
+    "webapp/src/lib/passkeys/server.ts": "58808a8e58982bbadaade64e14eae524118b658f67b576f373f7c4db94d51ea8",
+    "webapp/src/lib/sharing/approve-share-request.ts": "bc24f784deecee33da60a2b54b29161854ff4ee1fb7512d03c4994ee4c1485a9",
+    "webapp/src/lib/sharing/artifact-revocation.ts": "cce4f4482476062684b632a26d65a468c69e194a1b6cc4db399ce3ce8eb5eb96",
+    "webapp/src/lib/sharing/document-adapter.ts": "31532017f6de615935abc91b8f43471c73a689063c7e047017f5642bf9b8248d",
+    "webapp/src/lib/sharing/otp-rate-limit.ts": "205441cbdd889a7e140546ede020ad46f3509e3534b8611da6b5dee37818c504",
+    "webapp/src/lib/sharing/parse-recipient-list.ts": "c183fb329a103a918fcdbc9d9a51a1e81aec448a4fe2cedf4225d1355e14f8f0",
+    "webapp/src/lib/sharing/recipient-audit-client.ts": "375cdb6a328fc2f17b5cf24927b3a4b56cc96a76045b3f2986d4a1a7edaebff7",
+    "webapp/src/lib/sharing/recipient-list-issues.ts": "f296c29d885d61266d64700357d087904d12d824cc918c95ef442ffe643c9455",
+    "webapp/src/lib/sharing/refresh-share-link-access.ts": "fba3dfccdaffe0f52d0faa117e7499be00466ac7e53a2254f3aebac3c2a0e76c",
+    "webapp/src/lib/sharing/registry.ts": "3ad6811f23f52cf820ccb10196da1a82cae82cff813379eb9af2449b767cdb45",
+    "webapp/src/lib/sharing/reject-share-request.ts": "e8fa8b96b8b89eaaaf46f36e82c868f92f73c20bfa48052b4dab6834ebd522a4",
+    "webapp/src/lib/sharing/resource-dto.ts": "cff132020fe71ff9fa4be5655672d1a863d2c1144deec096cd7dabadbee8d9aa",
+    "webapp/src/lib/sharing/run-sequential-creates.ts": "827e9f7aea0ab53d9bef45f5234e9cc3fd6477f83fcda31132a1c29d71e9b8f2",
+    "webapp/src/lib/sharing/secret-adapter.ts": "723bb89696c550d251132fac7b0d6c399ee775104573eb7884f48ec4315b84ed",
+    "webapp/src/lib/sharing/share-request-notifications.ts": "b4340b6996900911ac1af68886d6531618ddcadc098ba3d1e4f00ac611e6f117",
+    "webapp/src/lib/sharing/share-request-reviewers.ts": "8efc121f19ed01c456ace747e6e885ca5e9a5216761948e47ae5d699d5c87001",
+    "webapp/src/lib/sharing/sharing-allowance-access.ts": "ae2db4d4b17971fde6e2cf04102a645d28407fb3d677b35db383f7e4f04c51f8",
+    "webapp/src/lib/sharing/vault-resource.ts": "8b3a6d610238fd3f7092c544e6b12de38a63932d302f180da54b35736444c194",
+    "webapp/src/lib/sharing/vendor-resource-resolution.ts": "45213d33f7c4d02b4c862057fe5d5ab9c30d8bf2e1a5644169ed0f22c00df854",
+    "webapp/src/lib/sharing/vendor-route.ts": "3dc6a0577392311c703c7a6fe6b81c727257d4bc3ac70f4256f2d331c6bb9b23",
+    "webapp/src/lib/sharing/workspace-sharing-access.ts": "f66e94803d883fa88f77947cdbabb7b668f7c4001887b16ef983f54c10d76bd6",
+    "webapp/src/lib/signing/authorization.ts": "965c268febb733fad599adbd6c93b67bf3766c5e873b2d82951ff47d8803808c",
+    "webapp/src/lib/signing/consent-copy.ts": "42e139d89ef074bc61f370530ca93ba83a99c806163f7c06d63cc6eb82bf1b3e",
+    "webapp/src/lib/signing/consent-hash-server.ts": "05545298c4a6d3d64879aad58280aa0d9408ac8e52cc2eb4aaf107e51bbf469c",
+    "webapp/src/lib/signing/consent-hash.ts": "6c3efb39f091e722c0118ca6a5f4749d5c0c29fc6f2b1befb3bd93c32e6e83c7",
+    "webapp/src/lib/signing/field-metadata.test.ts": "80ba29b1ef67b4633b8bb33b92717d9efa7d56720cefd0718e0bbb3114021dea",
+    "webapp/src/lib/signing/field-metadata.ts": "be297f83a642e47328eb5eb7c489fc056a5b4fce9ff3db873cfc1d3fbb759175",
+    "webapp/src/lib/signing/field-types.ts": "35ade71bff2b4c13c0d2a81774bc6da575aba22dbe0aae09466a8b22bf34de71",
+    "webapp/src/lib/signing/finalize-signed-artifact.ts": "a1844fb214a3c425a99b5899e1cca87d73ed96eacb7add9a46545ffde78cd3b2",
+    "webapp/src/lib/signing/guided-steps.test.ts": "66f0dbc4fbe88019361cc3a5573c78a65050a3ab9c6268c2f615d45eb660d329",
+    "webapp/src/lib/signing/guided-steps.ts": "bbdf47c418e4a0283aba9d02bf2d30c698b5ac6f106299b87b5361e7b93fc024",
+    "webapp/src/lib/signing/load-owner-signing-document.ts": "822e9d341e62fe66bc8dd90f767692877aa2b734cc7b74fb6b523214f8dcc03d",
+    "webapp/src/lib/signing/pdf-page-dimensions.test.ts": "3bb3d417f6eceebcf55a10f2317299b0bd7534b5a9d75145110b0da6f8e45d6f",
+    "webapp/src/lib/signing/pdf-page-dimensions.ts": "5de22a98aaed97fa0b52d8c6357bf7387bce2cc5af777cd816040161d8138e78",
+    "webapp/src/lib/signing/request-pin.ts": "411d320d796478d8d24d42bae17f608a74b1b0024300f1d9102a0dc07545f173",
+    "webapp/src/lib/signing/resolve-vault-owner-email.ts": "ac4c5df978e038e1ba8749dd751878850be77ae4a84a7fa8dbcbbc5718ad9382",
+    "webapp/src/lib/signing/signing-download.ts": "9130f8266c234dece51662ac43a64e745cc9d20542d6022b66a8727b11421144",
+    "webapp/src/lib/signing/signing-lifecycle.test.ts": "9257d2736156e9eb99797d7ed68bf0acca89f3b046a7fd08d918d022fe269370",
+    "webapp/src/lib/signing/signing-lifecycle.ts": "677023d7cdc4f0da4ebdacbfce122e7708258dfbe1bb5fdd1ed69ca0c50ad932",
+    "webapp/src/lib/signing/signing-notifications.ts": "9568a780b459e50c088b24ce9e0ded8095239414a42c34a5a3fa78bfe3663a0c",
+    "webapp/src/lib/signing/signing-plan.test.ts": "07c31184d304c8797d6ba06ba32e91d3897b3eda19714e871ef0ce3e56e014a6",
+    "webapp/src/lib/signing/signing-plan.ts": "4a95de496688575714a221730c4ccd851ed0e9a0ef9af69ce5e7927025896384",
+    "webapp/src/lib/signing/workspace-signing-access.ts": "33cddc6ed63ef02f84f579c52e7c5216cf00ea09cd19de6766c0cb301fd8b951",
+    "webapp/src/lib/vaults/admin-only-vault-shell-client.ts": "ee0d1c3d48a93ce0f3536f16e14ba415cfd39ec3eb5df61b81f95ac95e9dd0e8",
+    "webapp/src/lib/vaults/canonical-vault-provision-client.ts": "ddae6983cdf6b714f695845530063cb2972ef6959695ef6ccdceeabc1204eed1",
+    "webapp/src/lib/vaults/canonical-vault-provision.ts": "441161f966fdb428d5fc9237b9d8f500475cd8db59751c3d9ba77b5e115910b2",
+    "webapp/src/lib/vaults/generation-activation.ts": "0c2ba9633dd330146d37bb01c0efcd94d33140608e9c007b02d8c3b7126115cf",
+    "webapp/src/lib/vaults/key-resolution.ts": "38f706ba14ffdaf131d97575e5a548ad66181564f026d7257edf5dbcc2328dac",
+    "webapp/src/lib/vaults/request-replacement.ts": "48cfa19bc03d124619ed1ba85aa71256545b96327003e138eff0976322784b20",
+    "webapp/src/lib/vaults/rotation-activation-client.ts": "e809c9555cee2058c7df8d16e1200e52244d331f1caa1a3f46159a1e36422d18",
+    "webapp/src/lib/vaults/vault-access-revocation.ts": "a121a5602dd6549f28858924dea8f9be386942b1f535e4d0d19d8e66a0586523",
+    "webapp/src/lib/vaults/vault-commercial-capabilities.ts": "c9093369f25bcf366f7f456c5c19cc32137ba56c15b218d288a4c88551a1d284",
+    "webapp/src/lib/vaults/vault-create-availability.ts": "1f126d7b9e18268da1a245eb845fc3fdb96196ebee0ab8c45980d44eef6df275",
+    "webapp/src/lib/vaults/vault-crypto-readiness-guard.ts": "f02045be2e2224a553313ae2e26ecadc7d8c6b97d90190387fd3d824559e18ce",
+    "webapp/src/lib/vaults/vault-crypto-readiness.ts": "6e06f6ed0d34390e8b23d30e553c063ee067ef30a020dbfa694aa613b0f3239f",
+    "webapp/src/lib/vaults/vault-grant-contract.ts": "8af496c32815e1c0938ddfcf1bdbb6a7cc0da60dfaeb45c0f4cef50843c7d743",
+    "webapp/src/lib/vaults/vault-post-provision-session.ts": "73e28c1e1cc8ca56c78c96c9b4caa834f0f294757fd2be26de2af7008db7c678",
+    "webapp/src/lib/vaults/vault-provision-api-client.ts": "7d50407c9ad6920f2f99153055035c737384bfbd30fa47fb2f7d10da2af1a2ab",
+    "webapp/src/lib/vaults/vault-provision-bootstrap-lock.ts": "1f670e9c80254ccf0bf5a8ba890c245f5a7693b0aa3bc53a355bf60bfd3c7702",
+    "webapp/src/lib/vaults/vault-provisioning-context.ts": "1eb73c7344b1643b4bafbd67da21c436ba6bcf70122b64ffa44fc8c0d224291d",
+    "webapp/src/lib/vaults/vault-provisioning-policy.ts": "2d1b2c36bf85306cebf196460466caa960be153c9405bbb19efa0bd84e50b30d",
+    "webapp/src/lib/vaults/vault-setup-bootstrap-outcome.ts": "65358c2949cfd1ef1c4ec102a2b2cac3ef4f9333ca620580217ca55f9d90ed0e",
+    "webapp/src/lib/vaults/vault-write-freeze.ts": "9a5dac5139525998b7fc353a32a04587b4bba8d68f7ad6aa688d9f253b89ed5e",
+    "webapp/src/lib/vaults/workspace-vault-create.ts": "46bf24662107341fa8f41c37c4f31e1c7118bbc2834239ebf7f06daf7e21ff1c"
+  },
+  "tests": {
+    "passed": 252,
+    "failed": 0,
+    "files": [
+      {
+        "path": "webapp/test/api/documents/commit-upload.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "POST /api/documents/commit-upload storage defense retries metadata when size is initially null then commits",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense deletes orphan and returns 400 when object missing",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense deletes oversize blob and returns 400",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense rejects when submitted size does not match stored ciphertext",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense rejects when submitted checksum does not match stored ciphertext",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense persists server-computed checksum and effective size",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense returns existing document idempotently without storage checks",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense requires ownerSealedDek prefix",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense ignores legacy encryptedDekForOwner/dekNonce fields and stores keyVersion 3 with ownerSealedDek only",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense rejects commit for a vault with no generation with 409 and reaps the staged ciphertext",
+            "status": "passed"
+          },
+          {
+            "name": "POST /api/documents/commit-upload storage defense rejects ownerSealedDek whose keyId does not match the vault key",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/api/signing/complete.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "/api/signing/vendor/[token]/complete requires a valid session \u2014 returns 401 without one",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete returns 409 when preSignatureHash does not match template postSignatureHash",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete returns 409 when preSignatureHash is missing and reference document has a hash",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete transitions dual mode to pending_owner_signature on success",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete returns 409 when a concurrent writer moved the request off pending_vendor_signature",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete completes vendor-only requests without owner counter-sign",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete creates a blockchain attestation for the vendor-signed document when the vendor-only request completes",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete rejects a malformed attestationId",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete does not create an attestation for dual-mode completion (owner still needs to counter-sign)",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete still completes the request when attestation creation fails (best-effort)",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete logs signing_signed audit event with vendorEmailHash as actorId",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete returns 410 when signing request is expired",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete returns 409 when status is not pending_vendor_signature",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete rejects ownerSealedDek whose key ID does not match the pinned vault key",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete rejects demo placeholder envelope values",
+            "status": "passed"
+          },
+          {
+            "name": "/api/signing/vendor/[token]/complete preserves creator and owner placement rows during vendor completion",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/attestation/service.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "attestation/service createAttestationForCompletion is idempotent when row exists",
+            "status": "passed"
+          },
+          {
+            "name": "attestation/service createAttestationForCompletion creates pending row with v0 cert without blocking stamp",
+            "status": "passed"
+          },
+          {
+            "name": "attestation/service processPendingAttestations processes batch",
+            "status": "passed"
+          },
+          {
+            "name": "attestation/service processPendingAttestations notifies vendor when attestation confirms",
+            "status": "passed"
+          },
+          {
+            "name": "attestation/service resolveSignatureAttestation preserves signingRequest after lazy upgrade",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/attestation/timestamps.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "attestation/timestamps getCalendarUrls parses comma-separated calendar URLs",
+            "status": "passed"
+          },
+          {
+            "name": "attestation/timestamps getCalendarUrls falls back to defaults when env empty",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/access-key.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "Access key Utilities generateAccessKey should return correct format (AAAA-BBBB-CCCC-DDDD-EEEE-X)",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities generateAccessKey should contain only Crockford Base32 characters",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities generateAccessKey should generate secrets that pass validation",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities generateAccessKey should generate different secrets each time",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities generateAccessKey should be 26 characters including dashes",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities generateAccessKey should left-pad when the bigint Base32 encoding is shorter than 20 chars",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should accept valid secret with dashes",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should accept valid secret without dashes",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should accept lowercase input and normalize to uppercase",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should accept input with spaces and strip them",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should throw on wrong length",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should throw on too long input",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should throw on invalid Crockford Base32 characters",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should throw on checksum mismatch",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities validateAndNormalizeAccessKey should return normalized string without separators",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should return Uint8Array",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should return bytes of expected length",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should produce same bytes for same secret",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should produce different bytes for different secrets",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should throw for invalid secret",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities accessKeyToBytes should accept normalized input without dashes",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities formatAccessKeyForDisplay should format normalized secret correctly",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities formatAccessKeyForDisplay should produce same format as generateAccessKey",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities formatAccessKeyForDisplay should throw for wrong length input",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities formatAccessKeyForDisplay should add dashes at correct positions",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities Round-trip validation should successfully round-trip: generate -> validate -> format",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities Round-trip validation should successfully convert to bytes and back through generation",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities Edge cases should handle secret with all zeros payload",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities Edge cases should reject empty string",
+            "status": "passed"
+          },
+          {
+            "name": "Access key Utilities Edge cases should reject whitespace only",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-client.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "account-root password verification accepts the right password against a stored verifier without any request",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification rejects a wrong password against a stored verifier, even for an unbound root",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification accepts an unbound root without a verifier because first-vault init can still replace it",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification proves an older root against a membership key, then stores its verifier",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification rejects a wrong password when the membership key does not open, and stores nothing",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification requires a passkey when a passkey wrap is the only proof of an older root",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification pins a verifier for an older bound root with nothing left to prove against",
+            "status": "passed"
+          },
+          {
+            "name": "account-root password verification sends a verifier for the new root when establishing it",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-compatibility.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "account-root compatibility (D-19/D-22) account-root.password.bytes-pinned",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) account-root.master-key-extraction.equivalent",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) account-root.passkey.same-bytes",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) account-root.wrong-password.rejects",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) account-root.no-re-enrollment",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) membership envelope rewrap opens under rotated account root",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) old root cannot open membership envelope after rotation",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) passkey bytes remain compatible after account-root rotation prep",
+            "status": "passed"
+          },
+          {
+            "name": "account-root compatibility (D-19/D-22) atomic replay uses one rotation id for membership manifests",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-password-policy.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "resolveAccountRootPasswordCheck checks the stored verifier whenever one exists",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootPasswordCheck accepts a unbound root that nothing is sealed under",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootPasswordCheck accepts a absent root that nothing is sealed under",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootPasswordCheck proves an older bound root against an active membership key first",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootPasswordCheck requires a passkey when a passkey wrap is the only proof",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootPasswordCheck accepts and pins an older bound root with nothing left to prove against",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-persistence.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "account root persistence matches equivalent KDF metadata",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence establishes once and rejects conflicting setup in a transaction",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence replaces an unbound root during atomic first-vault setup",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence clears the replaced root's verifier when the client sends none",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence writes the verifier when a root is first established",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence stores a missing verifier on an idempotent retry without overwriting an existing one",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence rejects replacement when the root is bound by 'membership key'",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence rejects replacement when the root is bound by 'passkey'",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence rejects replacement when the root is bound by 'rotation history'",
+            "status": "passed"
+          },
+          {
+            "name": "account root persistence rejects idempotent replay of a bound root with the same KDF",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding reports absent when the profile has no owner KDF",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding reports unbound when nothing is wrapped under the root",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding reports bound for 'membership key'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding reports bound for 'passkey'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding reports bound for 'rotation history'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding counts membership keys in every state, not only active ones",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding agrees with the first-vault replacement gate for 'unbound root'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding agrees with the first-vault replacement gate for 'membership key'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding agrees with the first-vault replacement gate for 'passkey'",
+            "status": "passed"
+          },
+          {
+            "name": "resolveAccountRootBinding agrees with the first-vault replacement gate for 'rotation history'",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-rotation-client.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "rotateAccountRoot posts a membership-only payload with no legacy vault list",
+            "status": "passed"
+          },
+          {
+            "name": "rotateAccountRoot surfaces a certain rejection unchanged",
+            "status": "passed"
+          },
+          {
+            "name": "rotateAccountRoot treats any other post failure as uncertain",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-rotation-manifest.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "enumerateAccountRootRotationManifest returns only membership keys (no legacy vault manifest)",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/account-root-verifier.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "account-root verifier accepts the root it was created from",
+            "status": "passed"
+          },
+          {
+            "name": "account-root verifier rejects a root derived from a different password",
+            "status": "passed"
+          },
+          {
+            "name": "account-root verifier is keyed by a derived subkey, never the account root itself",
+            "status": "passed"
+          },
+          {
+            "name": "account-root verifier produces a fresh ciphertext each time",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/argon2-worker-fallback.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "deriveKek worker fallback falls back to main-thread argon2 and emits telemetry",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/client-crypto.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "client-crypto establishOwnerKdf returns a fresh owner salt with the default KDF params",
+            "status": "passed"
+          },
+          {
+            "name": "client-crypto deriveAccountRoot matches deriveOwnerMasterKey for the same password and owner KDF",
+            "status": "passed"
+          },
+          {
+            "name": "client-crypto deriveAccountRoot derives a different root for a different password",
+            "status": "passed"
+          },
+          {
+            "name": "client-crypto prepareMasterKeyRotation mints a fresh owner KDF whose derived root matches the returned master key",
+            "status": "passed"
+          },
+          {
+            "name": "client-crypto v3 owner sealed DEK upload/download encryptFileForUploadV3 and decryptFileForDownloadV3 round-trip",
+            "status": "passed"
+          },
+          {
+            "name": "client-crypto v3 owner sealed DEK upload/download openOwnerSealedDek rejects wrong vault context",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/envelope-format.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "inspectKeyedEnvelope accepts an envelope carrying the prefix and bound to the expected keyId",
+            "status": "passed"
+          },
+          {
+            "name": "inspectKeyedEnvelope reports a prefix fault when a sealed grant is offered as a wrapped private key",
+            "status": "passed"
+          },
+          {
+            "name": "inspectKeyedEnvelope reports a malformed fault when no keyId segment follows the prefix",
+            "status": "passed"
+          },
+          {
+            "name": "inspectKeyedEnvelope treats an empty keyId segment as malformed rather than a mismatch",
+            "status": "passed"
+          },
+          {
+            "name": "inspectKeyedEnvelope reports the foreign keyId it found so callers can log the mismatch",
+            "status": "passed"
+          },
+          {
+            "name": "inspectKeyedEnvelope reads the bound keyId, and nothing when the prefix is wrong",
+            "status": "passed"
+          },
+          {
+            "name": "inspectVaultKeyMaterial accepts a coherent public/private/keyId triple",
+            "status": "passed"
+          },
+          {
+            "name": "inspectVaultKeyMaterial refuses a sealed grant in the encryptedPrivateKey slot",
+            "status": "passed"
+          },
+          {
+            "name": "inspectVaultKeyMaterial refuses a public key whose fingerprint is not the declared keyId",
+            "status": "passed"
+          },
+          {
+            "name": "inspectVaultKeyMaterial refuses another vault's private key envelope under a matching public key",
+            "status": "passed"
+          },
+          {
+            "name": "inspectVaultKeyMaterial checks the prefix before spending a fingerprint computation",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/golden-vectors.characterization.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "golden-vectors characterization (package + adapters) locks v3 wire prefixes against fixtures (package constants)",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) locks domain separators via package HIERARCHICAL_KEK_INFO / VERIFIER_PLAINTEXT",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) package deriveMasterKey / deriveChildKey reproduce KDF and HKDF vectors",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) package parseSealedKey accepts fixture sealed envelope and returns matching keyId",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) adapter sealOwnerSealedKey / openOwnerSealedDek + package openContextualKey round-trip",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) adapter encryptFileForUploadV3 produces envelope openable by package openContextualKey",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) file pack length rule: packed === ciphertext + 12 + 16 (package encryptPayload)",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) package secret wrap uses lsk-wrap and reproduces secret_wrap vector",
+            "status": "passed"
+          },
+          {
+            "name": "golden-vectors characterization (package + adapters) encoding: toBase64Url edge, verifier standard base64, checksum lowercase hex",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/membership-key-proof.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "membership key proof challenge codec stores and returns the sealed envelope without a recoverable nonce",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec accepts only the nonce recovered by opening the envelope",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec rejects every other 32-byte proof",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec keeps a dotted sealed envelope intact, splitting only at the digest separator",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec rejects v1 challenges that carried the plaintext nonce",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec rejects values that are not a stored challenge",
+            "status": "passed"
+          },
+          {
+            "name": "membership key proof challenge codec binds the seal to a frozen contextual kind",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/membership-keys.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.aad.six-canonical-fields",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.metadata.separate-validation",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.wrong-aad.reject",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.cross-workspace.reject",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.stale-rotation.reject",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) membership-key.distinct-workspaces.distinct-keys",
+            "status": "passed"
+          },
+          {
+            "name": "membership-key mk1.a256gcm production codec (D-20/D-21) rejects malformed envelope and private/public mismatch before open",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/otp.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "OTP Crypto Utilities generateOtp should generate a 6-digit string",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateOtp should generate numeric values only",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateOtp should generate values in valid range (100000-999999)",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateOtp should generate different values on subsequent calls",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateOtp should pad with zeros if needed",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateSalt should return hex string of correct length (32 chars for 16 bytes)",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateSalt should generate different values on subsequent calls",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities generateSalt should generate cryptographically random values",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities hashOtp should produce consistent hash for same inputs",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities hashOtp should produce different hash for different OTPs",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities hashOtp should produce different hash for different salts",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities hashOtp should return hex-encoded hash",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities hashOtp should throw error when OTP_SECRET is not configured",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should return true for valid OTP",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should return false for invalid OTP",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should return false for wrong salt",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should return false for tampered hash",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should return false for hash of different length",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should throw error when OTP_SECRET is not configured",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities verifyOtp should use constant-time comparison to prevent timing attacks",
+            "status": "passed"
+          },
+          {
+            "name": "OTP Crypto Utilities OTP workflow integration should work end-to-end: generate, hash, verify",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/passkey-crypto.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey and password unlock equivalence (D-07 / G-2) a passkey-unwrapped account root equals the password-derived one",
+            "status": "passed"
+          },
+          {
+            "name": "passkey MK wrap/unwrap (G-3) round-trips the 32-byte owner master key",
+            "status": "passed"
+          },
+          {
+            "name": "passkey MK wrap/unwrap (G-3) throws PasskeyUnwrapError for a wrong PRF output",
+            "status": "passed"
+          },
+          {
+            "name": "passkey MK wrap/unwrap (G-3) generatePasskeyPrfSalt returns 32 random bytes",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/passkey-golden-vectors.characterization.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey MK wrap golden vectors produces the frozen pk1 envelope for fixed MK + PRF + nonce fixtures",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/sealed-box.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "sealed-box generateVaultKeypair generates a 32-byte X25519 keypair with envelope and fingerprint",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box sealBytes / openSealedBytes round-trips a 32-byte DEK payload",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box sealBytes / openSealedBytes fails to open with a different keypair",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box sealBytes / openSealedBytes fails to open tampered ciphertext",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box formatSealedDek / parseSealedDek round-trips sealed DEK envelopes with v3.sb1 prefix",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box formatSealedDek / parseSealedDek rejects malformed sealed DEK envelopes",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box public key envelopes formats and parses v3.x25519 public keys",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box public key envelopes validates public key fingerprint",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box public key envelopes rejects invalid public key prefix",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box encrypted private key envelopes round-trips v3.a256gcm envelopes",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box encrypted private key envelopes rejects non-canonical base64url in sealed DEK parse",
+            "status": "passed"
+          },
+          {
+            "name": "sealed-box base64url helpers encodes and decodes canonical base64url",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/vault-crypto.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "vault-crypto shim encryptDek / decryptDek should encrypt and decrypt a DEK with legacy EncryptedDek shape",
+            "status": "passed"
+          },
+          {
+            "name": "vault-crypto shim encryptDek / decryptDek should fail to decrypt with wrong KEK",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/vault-key-grants.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "vault-generation grant resource id vault-grant.resource-id.golden",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation grant resource id derives the resource id from the fingerprint, so a row id changes it",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.round-trip.v3-sb1",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.context-mismatch.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.recipient-substitution.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.replay.cross-context.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.malformed.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.public-private-mismatch.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.seal-key-mismatch.reject",
+            "status": "passed"
+          },
+          {
+            "name": "vault-generation contextual grants (D-23..D-27) vault-grant.seal-non-x25519-secret.reject",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/vault-verifier.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "vault-verifier verifies correct KEK and rejects wrong KEK",
+            "status": "passed"
+          },
+          {
+            "name": "vault-verifier rejects tampered verifier ciphertext",
+            "status": "passed"
+          },
+          {
+            "name": "vault-verifier rejects truncated verifier ciphertext",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/crypto/web-crypto-context.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "web-crypto-context detects missing crypto.subtle",
+            "status": "passed"
+          },
+          {
+            "name": "web-crypto-context maps Safari importKey TypeError when subtle is present",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/passkeys/enroll-client.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "unlockWithPasskeyFlow does not unlock when auth/verify rejects the assertion",
+            "status": "passed"
+          },
+          {
+            "name": "unlockWithPasskeyFlow unwraps and unlocks after successful auth/verify",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/lib/sharing/artifact-revocation.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "artifact revocation primitives revokes unrevoked share links and cancels parent requests",
+            "status": "passed"
+          },
+          {
+            "name": "artifact revocation primitives cancels pending share requests only",
+            "status": "passed"
+          },
+          {
+            "name": "artifact revocation primitives revokes active document requests and invalidates upload reservations",
+            "status": "passed"
+          },
+          {
+            "name": "artifact revocation primitives voids voidable signing requests",
+            "status": "passed"
+          },
+          {
+            "name": "artifact revocation primitives orchestrates creator-scoped revocation and is idempotent on empty replay",
+            "status": "passed"
+          },
+          {
+            "name": "artifact revocation primitives does not select another operator\u2019s artifacts when createdById is set",
+            "status": "passed"
+          },
+          {
+            "name": "decrypt-access-loss composition member removal and admin reset call revokeDecryptAccessForVaultTx",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/api/vault/passkey/account-root-status.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey account-root status (D-19/D-22) existing-passkey: never-owner operator receives wrappedMasterKey metadata",
+            "status": "passed"
+          },
+          {
+            "name": "passkey account-root status (D-19/D-22) existing-password path: list route allows established account root without vault ownership",
+            "status": "passed"
+          },
+          {
+            "name": "passkey account-root status (D-19/D-22) stale-wrap: auth/options omits credentials whose rotation id differs",
+            "status": "passed"
+          },
+          {
+            "name": "passkey account-root status (D-19/D-22) revoked-membership: operator without active membership is denied",
+            "status": "passed"
+          },
+          {
+            "name": "passkey account-root status (D-19/D-22) cross-user: list route scopes credentials to authenticated profile only",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/api/vault/passkey/auth-options.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey auth/options does not call requirePasskeysCapability",
+            "status": "passed"
+          },
+          {
+            "name": "passkey auth/options returns wrappedMasterKey and prfSalt for current credentials",
+            "status": "passed"
+          },
+          {
+            "name": "passkey auth/options returns empty credentials when all wraps are stale",
+            "status": "passed"
+          },
+          {
+            "name": "passkey auth/options still allows auth/options after downgrade while register denies",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/api/vault/passkey/list-delete.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey list/delete routes lists credentials without secret material",
+            "status": "passed"
+          },
+          {
+            "name": "passkey list/delete routes deletes only owner-scoped credentials",
+            "status": "passed"
+          },
+          {
+            "name": "passkey list/delete routes returns 404 when credential is not owned",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/api/vault/passkey/register.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "passkey register routes denies register/options before the entitlement check when no account root exists",
+            "status": "passed"
+          },
+          {
+            "name": "passkey register routes denies register/options when passkeys.enabled is false",
+            "status": "passed"
+          },
+          {
+            "name": "passkey register routes denies register/options for legacy v1 vault owners",
+            "status": "passed"
+          },
+          {
+            "name": "passkey register routes denies register/verify for legacy v1 vault owners",
+            "status": "passed"
+          },
+          {
+            "name": "passkey register routes persists a credential with lastKeyRotationId on register/verify",
+            "status": "passed"
+          }
+        ]
+      },
+      {
+        "path": "webapp/test/app/api/request/vendor/vendor-upload.test.ts",
+        "status": "passed",
+        "assertions": [
+          {
+            "name": "document request vendor uploads returns 409 when prepare exceeds the 10-file quota",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads bounds the upload reservation expiry to the document request expiry, not the flat TTL window",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads commits a document with ownerSealedDek and no legacy owner fields",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads staged ciphertext is reaped on commit-time rejection reaps when the envelope is not sealed to the request key",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads staged ciphertext is reaped on commit-time rejection reaps and returns 409 when the vault is no longer ready",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects commit and deletes the object when the request has already reached the 10-document cap inside the transaction",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects commit when the server-computed checksum does not match the submitted checksum",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects commit when the submitted size does not match the actual stored object size",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads deletes an uploaded file and reverts status when none remain",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects delete when the file does not belong to the request",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects commit when the request was revoked inside the transaction",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads deletes storage only after the database transaction succeeds",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads sends owner email once when completing a partially_received request",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads rejects completion of an expired request even if it is still partially_received",
+            "status": "passed"
+          },
+          {
+            "name": "document request vendor uploads sends no email and reports the winner status when a parallel completion already won the atomic transition",
+            "status": "passed"
+          }
+        ]
+      }
+    ]
+  },
+  "evidenceBoundary": "Private source inspected and tested; public hashes identify it but do not make it publicly reproducible."
+}

@@ -1,0 +1,24 @@
+{
+  "name": "1bridge-research-artifacts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "checks": "node experiments/crypto-checks.mjs",
+    "bench": "node scripts/run-browser-bench.mjs",
+    "analyze": "node scripts/analyze.mjs",
+    "protocol:bench": "node experiments/protocol-bench.mjs",
+    "verify:private": "node scripts/verify-private.mjs",
+    "build:papers": "bash scripts/build-papers.sh"
+  },
+  "dependencies": {
+    "@drvillo/webcrypto-seal": "0.2.1",
+    "@noble/hashes": "2.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "playwright": "1.61.1"
+  }
+}

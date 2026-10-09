@@ -1,0 +1,62 @@
+{
+  "applicationCommit": "a103da282e2cec6351f28f04db67b22d16fdd75b",
+  "passed": 7,
+  "failed": 0,
+  "boundaryDoubles": [
+    "Supabase identity",
+    "SMTP",
+    "signed object-storage URLs",
+    "Next.js request cookie/header context"
+  ],
+  "database": "isolated PostgreSQL with committed migrations",
+  "initialAttempt": {
+    "passed": 3,
+    "failed": 4,
+    "cause": "Disposable environment initially omitted OTP and vendor-session secrets; recipient authentication could not complete. Re-run used explicitly disposable secrets."
+  },
+  "files": [
+    {
+      "path": "webapp/test/integration/passkey/round-trip.test.ts",
+      "assertions": [
+        {
+          "name": "passkey MK round-trip auth/options material unwraps to the original master key",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "path": "webapp/test/integration/sharing/share-lifecycle.test.ts",
+      "assertions": [
+        {
+          "name": "share lifecycle stops an authenticated recipient the moment the owner revokes",
+          "status": "passed"
+        },
+        {
+          "name": "share lifecycle refuses an expired link even with a valid session",
+          "status": "passed"
+        },
+        {
+          "name": "share lifecycle binds the session to the browser that verified the code",
+          "status": "passed"
+        },
+        {
+          "name": "share lifecycle requires a fresh code once the session cookie is gone",
+          "status": "passed"
+        },
+        {
+          "name": "share lifecycle rejects an unknown link token",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "path": "webapp/test/integration/workspaces/required-generations.test.ts",
+      "assertions": [
+        {
+          "name": "listRequiredGenerationsForVault includes signing document generations scoped to the vault via signingRequest",
+          "status": "passed"
+        }
+      ]
+    }
+  ]
+}

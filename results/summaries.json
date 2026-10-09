@@ -2,6 +2,754 @@
   "method": "Linear-interpolated quantiles; deterministic 1000-resample empirical bootstrap over individual trials. Conditional intervals do not account for serial correlation or population/device variability.",
   "rows": [
     {
+      "file": "browser-chromium-application.json",
+      "name": "application.account-root",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 6085.149999976158,
+      "p95": 6411.690000033378,
+      "medianCI": [
+        6035.25,
+        6149.800000011921
+      ],
+      "p95CI": [
+        6349.034999999404,
+        6460.890000000596
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.generation-create",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.09999996423721313,
+      "p95": 0.19999998807907104,
+      "medianCI": [
+        0.09999996423721313,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.10000002384185791,
+        0.19999999105930327
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.verifier-open",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0,
+      "p95": 0.09999996423721313,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0,
+        0.10000002384185791
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.contextual-seal",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.20000004768371582,
+      "medianCI": [
+        0.10000002384185791,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.19999998807907104,
+        0.20000004768371582
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.1024",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0,
+      "p95": 0.10000002384185791,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0.004999998211860372,
+        0.10000002384185791
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.1024",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0,
+      "p95": 0.10000002384185791,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0.09999996423721313,
+        0.10000002384185791
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.1024",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0,
+      "p95": 0,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0,
+        0
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.1024",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0,
+      "p95": 0,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0,
+        0.09999996721744538
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.1024",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.19999998807907104,
+      "p95": 0.30000001192092896,
+      "medianCI": [
+        0.19999998807907104,
+        0.19999998807907104
+      ],
+      "p95CI": [
+        0.30000001192092896,
+        0.3999999791383743
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.1048576",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.5,
+      "p95": 0.6050000220537183,
+      "medianCI": [
+        0.40000003576278687,
+        0.5
+      ],
+      "p95CI": [
+        0.5999999672174454,
+        0.9000000357627869
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.1048576",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.3999999761581421,
+      "p95": 0.5050000011920927,
+      "medianCI": [
+        0.3999999761581421,
+        0.40000003576278687
+      ],
+      "p95CI": [
+        0.5,
+        0.9049999773502347
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.1048576",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.09999996423721313,
+      "p95": 0.19999998807907104,
+      "medianCI": [
+        0.09999996423721313,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.19999998807907104,
+        0.20000004768371582
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.1048576",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.5,
+      "p95": 0.6000000238418579,
+      "medianCI": [
+        0.5,
+        0.5
+      ],
+      "p95CI": [
+        0.6000000238418579,
+        0.6050000220537183
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.1048576",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 1.300000011920929,
+      "p95": 2.1049999654293057,
+      "medianCI": [
+        1.300000011920929,
+        1.399999976158142
+      ],
+      "p95CI": [
+        1.5999999642372131,
+        2.2050000458955763
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.26214400",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 13.049999982118607,
+      "p95": 18.604999965429307,
+      "medianCI": [
+        12.600000023841858,
+        13.799999952316284
+      ],
+      "p95CI": [
+        17.30000001192093,
+        21.079999998211857
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.26214400",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 9.800000011920929,
+      "p95": 12.405000033974646,
+      "medianCI": [
+        9.600000023841858,
+        10.349999994039536
+      ],
+      "p95CI": [
+        12.11000002324581,
+        13.020000001788139
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.26214400",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 1.7000000476837158,
+      "p95": 2.3050000131130215,
+      "medianCI": [
+        1.699999988079071,
+        1.800000011920929
+      ],
+      "p95CI": [
+        2,
+        2.6049999654293057
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.26214400",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 12.400000005960464,
+      "p95": 13.805000010132789,
+      "medianCI": [
+        12.25,
+        12.800000011920929
+      ],
+      "p95CI": [
+        13.704874989241361,
+        14.00499999821186
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.26214400",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 29.749999970197678,
+      "p95": 36.60500002503395,
+      "medianCI": [
+        29.400000035762787,
+        30.799999982863664
+      ],
+      "p95CI": [
+        35.80500000871718,
+        37.730000025033945
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.1",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.20000004768371582,
+      "medianCI": [
+        0.10000002384185791,
+        0.19999998807907104
+      ],
+      "p95CI": [
+        0.19999999105930327,
+        0.30000001192092896
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.10",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 1.399999976158142,
+      "p95": 1.4050000339746473,
+      "medianCI": [
+        1.300000011920929,
+        1.399999976158142
+      ],
+      "p95CI": [
+        1.4000000357627869,
+        1.5
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.50",
+      "mode": "initialized",
+      "n": 100,
+      "failures": 0,
+      "median": 6.300000011920929,
+      "p95": 6.5,
+      "medianCI": [
+        6.200000047683716,
+        6.300000011920929
+      ],
+      "p95CI": [
+        6.405000033974647,
+        6.604999965429306
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.account-root",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 6028.25,
+      "p95": 6659.05,
+      "medianCI": [
+        5998.850000023842,
+        6080.599999964237
+      ],
+      "p95CI": [
+        6249.4699999958275,
+        6746.899999976158
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.generation-create",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.20000002086162566,
+      "medianCI": [
+        0.10000002384185791,
+        0.19999998807907104
+      ],
+      "p95CI": [
+        0.19999998807907104,
+        0.20000004768371582
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.verifier-open",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.19999998807907104,
+      "medianCI": [
+        0.09999996423721313,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.15500000417232485,
+        0.19999998807907104
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.contextual-seal",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.5999999642372131,
+      "p95": 0.699999988079071,
+      "medianCI": [
+        0.5,
+        0.6000000238418579
+      ],
+      "p95CI": [
+        0.6000000238418579,
+        0.7000000476837158
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.1024",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0,
+      "p95": 0.10000002384185791,
+      "medianCI": [
+        0,
+        0.09999999403953552
+      ],
+      "p95CI": [
+        0.10000002384185791,
+        0.19999998807907104
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.1024",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.15500000417232485,
+      "medianCI": [
+        0.09999996423721313,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.10000002384185791,
+        0.19999998807907104
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.1024",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0,
+      "p95": 0.10000002384185791,
+      "medianCI": [
+        0,
+        0
+      ],
+      "p95CI": [
+        0.09999996423721313,
+        0.20000004768371582
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.1024",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.09999996423721313,
+      "p95": 0.15500000417232485,
+      "medianCI": [
+        0,
+        0.10000002384185791
+      ],
+      "p95CI": [
+        0.10000002384185791,
+        0.19999998807907104
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.1024",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 3.699999988079071,
+      "p95": 4.619999995827674,
+      "medianCI": [
+        3.5,
+        3.7500000298023224
+      ],
+      "p95CI": [
+        4,
+        5.199999988079071
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.1048576",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.5999999642372131,
+      "p95": 0.699999988079071,
+      "medianCI": [
+        0.5999999642372131,
+        0.6000000238418579
+      ],
+      "p95CI": [
+        0.6536250046640633,
+        0.800000011920929
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.1048576",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.5,
+      "p95": 0.699999988079071,
+      "medianCI": [
+        0.5,
+        0.6000000238418579
+      ],
+      "p95CI": [
+        0.699999988079071,
+        0.7000000476837158
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.1048576",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.10000002384185791,
+      "p95": 0.20000004768371582,
+      "medianCI": [
+        0.09999999403953552,
+        0.19999998807907104
+      ],
+      "p95CI": [
+        0.19999998807907104,
+        0.30000001192092896
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.1048576",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 0.5999999642372131,
+      "p95": 0.7550000280141828,
+      "medianCI": [
+        0.5999999642372131,
+        0.6000000238418579
+      ],
+      "p95CI": [
+        0.6550000041723248,
+        0.800000011920929
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.1048576",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 5.1500000059604645,
+      "p95": 6.199999988079071,
+      "medianCI": [
+        4.9000000059604645,
+        5.350000023841858
+      ],
+      "p95CI": [
+        6.009999969601631,
+        6.899999976158142
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-encrypt.26214400",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 15.099999994039536,
+      "p95": 17.364999994635582,
+      "medianCI": [
+        14.147499976307154,
+        15.300000011920929
+      ],
+      "p95CI": [
+        15.899999976158142,
+        25.100000023841858
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.aes-decrypt.26214400",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 12.5,
+      "p95": 13.975000014901159,
+      "medianCI": [
+        11.800000011920929,
+        13.049999982118607
+      ],
+      "p95CI": [
+        13.300000011920929,
+        16.69999998807907
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.pack.26214400",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 2.7000000178813934,
+      "p95": 3.510000002384185,
+      "medianCI": [
+        2.599999964237213,
+        2.9000000059604645
+      ],
+      "p95CI": [
+        3,
+        3.900000035762787
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "library.sha256.26214400",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 13.75,
+      "p95": 15,
+      "medianCI": [
+        13.199999988079071,
+        14.099999994039536
+      ],
+      "p95CI": [
+        14.574499985799193,
+        17.69999998807907
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.upload-encrypt.26214400",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 38.24999997019768,
+      "p95": 44.5,
+      "medianCI": [
+        36.89999997615814,
+        40.69999998807907
+      ],
+      "p95CI": [
+        41.5,
+        48.700000047683716
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.1",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 3.8499999940395355,
+      "p95": 4.299999952316284,
+      "medianCI": [
+        3.700000047683716,
+        4
+      ],
+      "p95CI": [
+        4.100000023841858,
+        4.5
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.10",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 5.700000047683716,
+      "p95": 6.2649999976158135,
+      "medianCI": [
+        5.600000023841858,
+        5.800000011920929
+      ],
+      "p95CI": [
+        6,
+        6.899999976158142
+      ]
+    },
+    {
+      "file": "browser-chromium-application.json",
+      "name": "application.generation-grants.50",
+      "mode": "cold",
+      "n": 30,
+      "failures": 0,
+      "median": 11.950000017881393,
+      "p95": 12.864999994635582,
+      "medianCI": [
+        11.799999952316284,
+        12.199999988079071
+      ],
+      "p95CI": [
+        12.35499999806285,
+        13.199999988079071
+      ]
+    },
+    {
       "file": "private-lifecycle.json",
       "name": "application.activation.1",
       "mode": "initialized",

@@ -9,3 +9,5 @@ papers/*.blg
 papers/*.log
 papers/*.out
 papers/*.toc
+papers/*.tex
+papers/*.pdf

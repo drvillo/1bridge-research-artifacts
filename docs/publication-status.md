@@ -1,6 +1,6 @@
 # Publication and evidence status — 9 October 2026
 
-These are four separate **working technical reports**. They are prepared for 1Bridge; independent review has not occurred. Public availability is not a claim of peer review, deployment certification, or established academic novelty.
+These are four separate **working technical reports**. They are prepared for [1Bridge](https://1bridgevault.com); independent review has not occurred. Public availability is not a claim of peer review, deployment certification, or established academic novelty.
 
 The manuscript drafts remain private pending the publication plan's independent-review requirement. The public repository releases experiments and raw evidence, not papers represented as reviewed or publication-ready.
 
@@ -8,7 +8,7 @@ The manuscript drafts remain private pending the publication plan's independent-
 |---|---|---|
 | System companion | Implementation-grounded workflow specification; explicit trust boundaries; selected actual-function and persisted evidence; citations and compiled PDF | Independent source-access review; full browser/storage journeys; unresolved lifecycle interleavings |
 | Benchmark report | 2860 headless Chromium observations across 22 workloads; 300 local activation observations; raw data, conditional intervals and analysis | Native Chrome/Firefox/Safari and actual Android/iOS coverage; controlled repeat sessions; network and workflow phase instrumentation; reviewer replication |
-| Comparative study | Common event vocabulary and outcome classes; actual 1Bridge pilot and persisted recipient-coverage counterexample; primary-source assessment | Executed common scenarios on a second actual implementation; affected/fixed calibration; comparison with existing methods; substantive transferable finding |
+| Comparative study | Common event vocabulary and outcome classes; actual [1Bridge](https://1bridgevault.com) pilot and persisted recipient-coverage counterexample; primary-source assessment | Executed common scenarios on a second actual implementation; affected/fixed calibration; comparison with existing methods; substantive transferable finding |
 | Protocol specification | Established signed-envelope baseline; both bootstrap profiles; five adversarial/correctness tests; 100 local timing observations | Practical authenticated bootstrap; durable/concurrent state; explicit game-based model and reviewed proof; baseline comparisons; independently sufficient new result |
 
 The comparative and protocol manuscripts are **not ready to be presented as novel academic papers**. The former has only one executed application pilot. The latter implements standard mechanisms and explicitly documents their limits. If further work does not establish a gap and a sufficient contribution, keep them as technical reports.

@@ -40,6 +40,8 @@ Experiments use disposable documents and keys. Published test private keys are i
 
 `results/` contains raw trial observations, source provenance, and correctness outcomes. `docs/` records the literature assessment, claim-to-evidence mapping, and open publication gates. `scripts/` builds and analyzes the evidence. Four manuscript drafts are maintained privately pending the independent review required by the publication plan; this repository does not publish their PDFs or source yet.
 
+The [governance implementation map](docs/governance-repository-map.md) links the newer public authority library and independent observer to the private application and this repository, with pinned revisions and explicit evidence limits. Those newer tests are separate from the baseline experiments and have not yet become D1–D4 application results.
+
 The drafts cover system architecture and workflows, initial browser/activation benchmarking, the adversarial lifecycle method and [1Bridge](https://1bridgevault.com) pilot, and the experimental guest-submission baseline. None has yet passed independent review or the relevant academic contribution gate.
 
 The initial collection contains 2860 headless Chromium observations on one Apple M4 Pro desktop, 300 actual server-function activation observations, 100 protocol-baseline observations, and the selected correctness evidence. It does **not** complete the planned cross-browser/mobile study or the second-system comparative evaluation. See [publication status](docs/publication-status.md), [literature assessment](docs/literature-review.md), [claim-to-evidence map](docs/evidence-map.md), and [private reproduction instructions](docs/private-reproduction.md).

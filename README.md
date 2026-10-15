@@ -40,7 +40,7 @@ Experiments use disposable documents and keys. Published test private keys are i
 
 `results/` contains raw trial observations, source provenance, and correctness outcomes. `docs/` records the literature assessment, claim-to-evidence mapping, and open publication gates. `scripts/` builds and analyzes the evidence. Four manuscript drafts are maintained privately pending the independent review required by the publication plan; this repository does not publish their PDFs or source yet.
 
-The [governance implementation map](docs/governance-repository-map.md) links the newer public authority library and independent observer to the private application and this repository, with pinned revisions and explicit evidence limits. Those newer tests are separate from the baseline experiments and have not yet become D1–D4 application results.
+The [governance implementation map](docs/governance-repository-map.md) links the current public authority-library and shared-observer branches to the private application worktree, with pinned revisions and explicit evidence limits. The [research traceability map](docs/governance-research-traceability.md) identifies which published mechanisms the new work uses and where an implementation claim would overreach. Integrated app tests now exist on an unpublished branch; they are separate from the baseline experiments in this repository, and neither those tests nor the older measurements establish a deployed D1–D4 result.
 
 The drafts cover system architecture and workflows, initial browser/activation benchmarking, the adversarial lifecycle method and [1Bridge](https://1bridgevault.com) pilot, and the experimental guest-submission baseline. None has yet passed independent review or the relevant academic contribution gate.
 

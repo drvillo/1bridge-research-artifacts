@@ -1,7 +1,8 @@
 import { createHash, createPublicKey, generateKeyPairSync } from 'node:crypto'
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, readdir, writeFile } from 'node:fs/promises'
 import { cpus, platform, release, totalmem } from 'node:os'
 import { performance } from 'node:perf_hooks'
+import { fileURLToPath } from 'node:url'
 import {
   blindProofAccess, decodeBase64Url, encodeBase64Url, finalizeProofAccess,
   importProofAccessPublicKey, inclusionProof, merkleRoot, verifyInclusion,
@@ -14,6 +15,20 @@ const DEFAULTS = {
   warmup: 3,
   sizes: [256, 1024, 4096],
   out: 'results/governance-component-benchmark.json',
+}
+// Hash of package.json and compiled JS from the clean b48c998 authority checkout.
+const AUTHORITY_BUILD_SHA256 = '2a0774548fb95f8d88698a8a19de02ce128d0a7c53383ddcaa561bdaf89ea50b'
+
+async function authorityBuildDigest() {
+  const packageUrl = new URL('../', import.meta.resolve('@drvillo/1bridge-authority'))
+  const distUrl = new URL('dist/', packageUrl)
+  const files = ['package.json', ...(await readdir(distUrl))
+    .filter((file) => file.endsWith('.js')).sort().map((file) => `dist/${file}`)]
+  const hash = createHash('sha256')
+  for (const file of files) {
+    hash.update(file).update('\0').update(await readFile(new URL(file, packageUrl))).update('\0')
+  }
+  return { digest: hash.digest('hex'), packagePath: fileURLToPath(packageUrl) }
 }
 
 function boundedInteger(value, label, min, max) {
@@ -98,6 +113,10 @@ async function main() {
   if (authorityDependency !== 'github:drvillo/1bridge-authority#b48c9989b59f243b22c655b3d55b4ce0ae814f06') {
     throw new Error('Unexpected authority dependency revision')
   }
+  const authorityBuild = await authorityBuildDigest()
+  if (authorityBuild.digest !== AUTHORITY_BUILD_SHA256) {
+    throw new Error('Authority build digest mismatch: installed package differs from the clean pinned build')
+  }
 
   const merkle = []
   for (const size of selected.sizes) {
@@ -124,6 +143,7 @@ async function main() {
     format: '1bridge.governance.component-benchmark/v1',
     recordedAt: new Date().toISOString(),
     authorityDependency,
+    authorityBuildSha256: authorityBuild.digest,
     environment: {
       node: process.version, platform: platform(), release: release(),
       cpuModel: cpus()[0]?.model ?? 'unknown', cpuCount: cpus().length,

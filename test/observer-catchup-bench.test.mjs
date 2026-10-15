@@ -5,7 +5,7 @@ import test from 'node:test'
 const resultUrl = new URL('../results/observer-catchup-benchmark.json', import.meta.url)
 const pin = 'github:drvillo/1bridge-authority#b48c9989b59f243b22c655b3d55b4ce0ae814f06'
 const buildSha256 = '2a0774548fb95f8d88698a8a19de02ce128d0a7c53383ddcaa561bdaf89ea50b'
-const observerCommit = 'b5a0a047d33e8d63010e41226df729d397193fa5'
+const observerCommit = '80095a942fdfce9f9834879aa5bffeb627edda63'
 
 test('observer catch-up raw artifact records verified nonempty poller samples', () => {
   const result = JSON.parse(readFileSync(resultUrl, 'utf8'))
@@ -30,7 +30,7 @@ test('observer catch-up raw artifact records verified nonempty poller samples', 
     assert.equal(sample.acceptedCheckpointHash, acceptedHead)
     assert.ok(Number.isFinite(sample.coldMs) && sample.coldMs >= 0)
     assert.ok(Number.isFinite(sample.hotMs) && sample.hotMs >= 0)
-    assert.ok(Number.isSafeInteger(sample.coldHttpRequests) && sample.coldHttpRequests > 0)
+    assert.equal(sample.coldHttpRequests, 2)
     assert.equal(sample.hotHttpRequests, 0)
   }
   assert.match(result.method, /pollObserverOnce/)

@@ -6,11 +6,11 @@
   "files": {
     ".gitignore": "cedc9ab3ce351c7aadf60f479c41f0904ad3dc0b138aee372c57c6e34fccf758",
     "LICENSE": "d02df9ee2f192c22279edf10d733449aaaad7d3de62ab34321a518a764025b39",
-    "README.md": "f09a1984886dca43c1eb0baa533287e4332cd33cc039868c5b84e273dad61d19",
+    "README.md": "7ecd38d33609ccd9dbc995ed5eea42fb1a374c151dbd41487ec887416a5dc2fd",
     "docs/baseline-differences.md": "2103744a7b83a46feba8539ceebf5468757739db31843c238d2d5c137c9f9b71",
     "docs/evidence-map.md": "60ec98f573d162634e38149f5beaa99411e4d2b34d3a0be1a168b181e8c860dc",
-    "docs/governance-repository-map.md": "11b5f7342b60b9ccdc8e3f47b0c8c4fb82cb17e48b2c4da482c560b997309b99",
-    "docs/governance-research-traceability.md": "67f42f7b86db5288c3d56905872ead8cf0d78ba1f5b55d0bf91671288809a03a",
+    "docs/governance-repository-map.md": "339d0c1a46e4b9bc48bdb7b8a052cb3b6744f0436c0fd4fbe471c204a3512298",
+    "docs/governance-research-traceability.md": "6d0dd192eb2347919ef2fbcb83f6ee666c188db53135025dbdd6ceec8289a367",
     "docs/literature-review.md": "c9bc99a35a1f47ad54315566f90e0904a1f158df5e0dd54283cf5e68eb636cf2",
     "docs/private-reproduction.md": "2b81b0f87a773a0cdf79e7ad925b78511f0d272700e5b602ab54eae9c346ec7a",
     "docs/publication-status.md": "98adb6ff8c19b5401f60603e88c587888aa196a83e057fe2c00701b9af544632",
@@ -29,7 +29,7 @@
     "results/crypto-checks.json": "b4e578a0cbd3fda0098cf8b80707da59987128b49874c0b339148da381fc4624",
     "results/governance-component-benchmark.json": "32990c8dfcc1c3f4052f148721e8511e6f416fd51da81ac18fd8b8c40b86c954",
     "results/integration-evidence.json": "8de44afb5564ccac581c45dc297ffc00a10e7bdf5c41dfd42ff87f66f23ed7ed",
-    "results/observer-catchup-benchmark.json": "284e188dfe8552723faf5eafaf1d4ba59a2305a696537d3b7e8c13cd3e5d7979",
+    "results/observer-catchup-benchmark.json": "a985295d2612eb0668a8e87d0a15f69ca816f47f7a755e9319bb8ec87a9861d5",
     "results/private-lifecycle.json": "fc1a3cc8c750d5bcc92bd81a1814a39940749224828c36523d596ae008e5666e",
     "results/protocol-baseline.json": "577ab90dd463c363aecc51fa9a53fddbc9f59c1ffa3bad839e0ee9a36c1fc2e3",
     "results/summaries.json": "b4390d55247e5df411e4d46e98be625388727f63183183a806be8b4756f09528",
@@ -43,7 +43,7 @@
     "scripts/verify-private.mjs": "c94b325a8e257bf5f8f0d91a893e28c84bb87249ede0841b6108e1cf187d052f",
     "test/governance-component-bench.test.mjs": "83645b4c485bddac3039f9145db1b1cf650c88919eab06c1e89b6ddbbdce4274",
     "test/manifest.test.mjs": "123e2b96407b88305033bbaf919224125be62b5692199155a310ebb39137d24a",
-    "test/observer-catchup-bench.test.mjs": "ae57ab7267c324ed9f538dc9d065f308c863e2e112350f7a3f6ab512a813fd98",
+    "test/observer-catchup-bench.test.mjs": "6c45638bebb1ae6a9fb3899d6c5d618812a1259b1103272e749b905e2af0bff6",
     "test/protocol.test.mjs": "6c51db44c3558e3718efa949bbade64fc5a51d8672d86e9ef8e270491563bb08",
     "test/statistics.test.mjs": "8a4d97d199a3a2660db04961a05898304ceba2d745109db0041b9dc03a48ec9b"
   }

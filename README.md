@@ -13,12 +13,15 @@ pnpm install --frozen-lockfile
 pnpm test
 pnpm checks
 pnpm protocol:bench
+pnpm governance:bench
 pnpm exec playwright install chromium firefox webkit
 pnpm bench --browser chromium --warm 100 --cold 30
 pnpm analyze
 ```
 
 The browser command imports the actual published `@drvillo/webcrypto-seal@0.2.1` package. Package-level contextual-grant controls are labeled as controls; they do not reproduce the application's membership-grant orchestration. Playwright WebKit is not native Safari. The experimental protocol is a standard signed-envelope baseline, not deployed [1Bridge](https://1bridgevault.com) functionality or an established novel contribution.
+
+`pnpm governance:bench` measures the exact Git-pinned `@drvillo/1bridge-authority` component. It writes 30 raw trials at each of 256, 1,024 and 4,096 Merkle leaves, plus 30 fresh RSA-4096 blind proof-access trials, after three discarded warmups. Key generation is excluded. Every measured inclusion proof and token is verified before the JSON artifact is written. The [raw result](results/governance-component-benchmark.json) records Node/CPU, methods, timings and proof/token sizes; the [experiment](experiments/governance-component-bench.mjs) accepts bounded `--trials`, `--warmup`, `--sizes` and `--out` options for smaller checks. It measures pure library calls on one host, not browser, network, database, observer or whole-product latency.
 
 ## Verify actual [1Bridge](https://1bridgevault.com) application behavior
 

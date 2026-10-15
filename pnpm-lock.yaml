@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@drvillo/1bridge-authority':
+        specifier: github:drvillo/1bridge-authority#b48c9989b59f243b22c655b3d55b4ce0ae814f06
+        version: https://codeload.github.com/drvillo/1bridge-authority/tar.gz/b48c9989b59f243b22c655b3d55b4ce0ae814f06
       '@drvillo/webcrypto-seal':
         specifier: 0.2.1
         version: 0.2.1
@@ -23,6 +26,11 @@ importers:
         version: 1.61.1
 
 packages:
+
+  '@drvillo/1bridge-authority@https://codeload.github.com/drvillo/1bridge-authority/tar.gz/b48c9989b59f243b22c655b3d55b4ce0ae814f06':
+    resolution: {tarball: https://codeload.github.com/drvillo/1bridge-authority/tar.gz/b48c9989b59f243b22c655b3d55b4ce0ae814f06}
+    version: 0.0.0
+    engines: {node: '>=22'}
 
   '@drvillo/webcrypto-seal@0.2.1':
     resolution: {integrity: sha512-Qb9GLIZDcOJXcQ7ChxdcVGEs/317panCuG4JCMQMgSLu8izK9czpITxXQMd5ktfSot/qkx/Vo1Nb9aK9zvMrCQ==}
@@ -215,6 +223,8 @@ packages:
     hasBin: true
 
 snapshots:
+
+  '@drvillo/1bridge-authority@https://codeload.github.com/drvillo/1bridge-authority/tar.gz/b48c9989b59f243b22c655b3d55b4ce0ae814f06': {}
 
   '@drvillo/webcrypto-seal@0.2.1':
     dependencies:

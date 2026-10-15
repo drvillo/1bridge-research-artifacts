@@ -11,7 +11,9 @@ test('artifact manifest covers the governance benchmark and matches its current 
     'pnpm-workspace.yaml',
     'experiments/governance-component-bench.mjs',
     'results/governance-component-benchmark.json',
+    'results/registry-proof-microbenchmark.json',
     'test/governance-component-bench.test.mjs',
+    'test/registry-proof-bench.test.mjs',
   ]) assert.ok(manifest.files[required], `Missing ${required}`)
   for (const [file, expected] of Object.entries(manifest.files)) {
     const actual = createHash('sha256').update(readFileSync(new URL(file, root))).digest('hex')

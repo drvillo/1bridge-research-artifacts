@@ -10,7 +10,7 @@
     "docs/baseline-differences.md": "2103744a7b83a46feba8539ceebf5468757739db31843c238d2d5c137c9f9b71",
     "docs/evidence-map.md": "60ec98f573d162634e38149f5beaa99411e4d2b34d3a0be1a168b181e8c860dc",
     "docs/governance-repository-map.md": "339d0c1a46e4b9bc48bdb7b8a052cb3b6744f0436c0fd4fbe471c204a3512298",
-    "docs/governance-research-traceability.md": "45a3cbba450445af4b352a2e3a70acf9d530a9a87f1c910b62acbb63e8b37f19",
+    "docs/governance-research-traceability.md": "51fdcb2f7cdd4b555f37cb3d8f6a253a783b56af976de795a188b3f08718b5ec",
     "docs/literature-review.md": "c9bc99a35a1f47ad54315566f90e0904a1f158df5e0dd54283cf5e68eb636cf2",
     "docs/private-reproduction.md": "2b81b0f87a773a0cdf79e7ad925b78511f0d272700e5b602ab54eae9c346ec7a",
     "docs/publication-status.md": "98adb6ff8c19b5401f60603e88c587888aa196a83e057fe2c00701b9af544632",
@@ -33,6 +33,7 @@
     "results/observer-scale-benchmark.json": "ee362a7322a3678e7de74efbc17ba2064d231092e769742462881df2ab35f193",
     "results/private-lifecycle.json": "fc1a3cc8c750d5bcc92bd81a1814a39940749224828c36523d596ae008e5666e",
     "results/protocol-baseline.json": "577ab90dd463c363aecc51fa9a53fddbc9f59c1ffa3bad839e0ee9a36c1fc2e3",
+    "results/registry-proof-microbenchmark.json": "f44cc0a69cda0e1d539d4c308b4738266bedc03106e843c83af685990efba27e",
     "results/summaries.json": "b4390d55247e5df411e4d46e98be625388727f63183183a806be8b4756f09528",
     "scripts/analyze.mjs": "c180aac96d46ef17117d6f07e7329a35b5406b98c3e66acbe987d028f6e3813e",
     "scripts/build-papers.sh": "07a353ac5a372e41c21df9eb5aba6ca4e7849cf5043909d4020a62e36a34f9ce",
@@ -43,10 +44,11 @@
     "scripts/statistics.mjs": "0dc67b40ae1d0f5a410ad3f798e70c08770a06e74602952b2008b273c2a3c80c",
     "scripts/verify-private.mjs": "c94b325a8e257bf5f8f0d91a893e28c84bb87249ede0841b6108e1cf187d052f",
     "test/governance-component-bench.test.mjs": "83645b4c485bddac3039f9145db1b1cf650c88919eab06c1e89b6ddbbdce4274",
-    "test/manifest.test.mjs": "123e2b96407b88305033bbaf919224125be62b5692199155a310ebb39137d24a",
+    "test/manifest.test.mjs": "e98b324401430f54fa47edafac9c569bce1d10671108218c922088392399ac30",
     "test/observer-catchup-bench.test.mjs": "6c45638bebb1ae6a9fb3899d6c5d618812a1259b1103272e749b905e2af0bff6",
     "test/observer-scale-bench.test.mjs": "87b774981ae495f3f3587692a5f08208e507d0ba95b51bd1f7031a7361da53d7",
     "test/protocol.test.mjs": "6c51db44c3558e3718efa949bbade64fc5a51d8672d86e9ef8e270491563bb08",
+    "test/registry-proof-bench.test.mjs": "2ecd722b7b386ef7b4fdf429ddc6f29422454c0a5b0569ce07fc260280badd9c",
     "test/statistics.test.mjs": "8a4d97d199a3a2660db04961a05898304ceba2d745109db0041b9dc03a48ec9b"
   }
 }

@@ -2,7 +2,7 @@
 
 These are four separate **working technical reports**. They are prepared for [1Bridge](https://1bridgevault.com); independent review has not occurred. Public availability is not a claim of peer review, deployment certification, or established academic novelty.
 
-The manuscript drafts remain private pending the publication plan's independent-review requirement. The public repository releases experiments and raw evidence, not papers represented as reviewed or publication-ready.
+The manuscript source drafts remain in the private application repository. That application's current `main` includes earlier PDF versions as public-site assets, which may be served when deployed. The updated PDFs and source are in [draft PR #138](https://github.com/drvillo/ubo-guard/pull/138); merging and deploying it would update those public assets. This research-artifacts repository releases experiments and raw evidence, and none of the reports has passed independent technical review.
 
 | Artifact | Completed in this revision | Remaining publication threshold |
 |---|---|---|
@@ -15,7 +15,7 @@ The comparative and protocol manuscripts are **not ready to be presented as nove
 
 ## Governance addendum at pinned revisions
 
-The four manuscript tracks at private application commit `49cbc09b` distinguish the earlier encryption baseline from the later D1–D4 implementation. The [repository map](governance-repository-map.md) pins the private application worktree, public [authority library](https://github.com/drvillo/1bridge-authority), public [compact observer](https://github.com/drvillo/1bridge-observer), and this evidence repository. The [research traceability map](governance-research-traceability.md) states the relationship to prior work and the narrower claims supported by this implementation. All four PDFs compiled and their pages were visually inspected. The manuscript branch remains a working draft for authorized reviewers; no independent technical review has occurred.
+The four manuscript tracks at private application commit `49cbc09b` distinguish the earlier encryption baseline from the later D1–D4 implementation. The [repository map](governance-repository-map.md) pins the private application worktree, public [authority library](https://github.com/drvillo/1bridge-authority), public [compact observer](https://github.com/drvillo/1bridge-observer), and this evidence repository. The [research traceability map](governance-research-traceability.md) states the relationship to prior work and the narrower claims supported by this implementation. All four PDFs compiled and their pages were visually inspected. The manuscript branch remains a working draft for authorized reviewers; its PDF outputs would be public site assets after merge and deployment. No independent technical review has occurred.
 
 The compact observer verifies publisher signatures and append-only consistency of global registry roots. It does not download customer feeds, inspect actor actions, or prove publication completeness. A customer uses a retained receipt, independently pinned keys, registry inclusion and signed feed continuation to review one action under an included prefix. Enterprise/Government strict mode strengthens that audit review without delaying releases. The implementation and local tests do not establish a live third-party deployment, independent pin delivery or a production freshness guarantee.
 

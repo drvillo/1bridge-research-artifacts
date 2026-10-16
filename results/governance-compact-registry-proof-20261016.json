@@ -1,0 +1,130 @@
+{
+  "format": "1bridge.governance.registry-proof-microbenchmark/v1",
+  "recordedAt": "2026-10-16T08:58:23.884Z",
+  "observerCommit": "8d75260ff89d524e5fcaae61d4b0ba3f72742c81",
+  "observerDirty": false,
+  "authorityDependency": "github:drvillo/1bridge-authority#297f81d11ed3cee75f01d561a71da15de8e75697",
+  "authorityBuildSha256": "204e58bcc1363f188715dc40bad202b5d5515feb955e4ec7cb2b2ad5c69a0a99",
+  "environment": {
+    "node": "v26.5.0",
+    "platform": "darwin",
+    "release": "24.6.0",
+    "cpuModel": "Apple M4 Pro",
+    "cpuCount": 12,
+    "postgresImage": "postgres@sha256:f4c66b820c6f974249089d3d16d86a3698eae11e8746eb6644b2271031e91232",
+    "postgresImageId": "sha256:97432f980da100ebd3e419711efee84e1e97a966d62c035286a07f239ddb4d9c",
+    "postgresImageArchitecture": "arm64",
+    "postgres": "17.11 (Debian 17.11-1.pgdg13+2)"
+  },
+  "options": {
+    "sizes": [
+      100,
+      1000,
+      10000
+    ],
+    "bytesPerEntry": 512,
+    "trialsPerSize": 3,
+    "oldSize": "floor(size / 2)"
+  },
+  "method": "Use one disposable Postgres temporary table with deterministic 512-byte entry values. For each size, fetch the full ordered prefix as the current app source does, validate its indexes and map its bytes, then time the installed portable consistencyProof. Compute both Merkle roots outside the timed interval and verify the proof in every trial. Insert and independent root calculation are excluded from timing.",
+  "cases": [
+    {
+      "size": 100,
+      "oldSize": 50,
+      "measurements": [
+        {
+          "fetchMs": 1.6321659999999838,
+          "prepareMs": 0.4969169999999963,
+          "proofMs": 3.8805830000000014,
+          "totalMs": 6.0096659999999815,
+          "proofItems": 7,
+          "rssMiB": 86.71875
+        },
+        {
+          "fetchMs": 1.1841249999999945,
+          "prepareMs": 0.07683300000002191,
+          "proofMs": 3.5568339999999807,
+          "totalMs": 4.817791999999997,
+          "proofItems": 7,
+          "rssMiB": 87.6875
+        },
+        {
+          "fetchMs": 1.602041999999983,
+          "prepareMs": 0.09987499999999727,
+          "proofMs": 2.9061249999999745,
+          "totalMs": 4.608041999999955,
+          "proofItems": 7,
+          "rssMiB": 90.46875
+        }
+      ]
+    },
+    {
+      "size": 1000,
+      "oldSize": 500,
+      "measurements": [
+        {
+          "fetchMs": 3.831292000000019,
+          "prepareMs": 0.13683299999996734,
+          "proofMs": 32.475292000000024,
+          "totalMs": 36.44341700000001,
+          "proofItems": 9,
+          "rssMiB": 94.4375
+        },
+        {
+          "fetchMs": 5.863833,
+          "prepareMs": 0.12133299999999281,
+          "proofMs": 26.400209000000018,
+          "totalMs": 32.38537500000001,
+          "proofItems": 9,
+          "rssMiB": 97.890625
+        },
+        {
+          "fetchMs": 9.772166999999968,
+          "prepareMs": 0.09012500000000045,
+          "proofMs": 25.998083000000065,
+          "totalMs": 35.86037500000003,
+          "proofItems": 9,
+          "rssMiB": 100.59375
+        }
+      ]
+    },
+    {
+      "size": 10000,
+      "oldSize": 5000,
+      "measurements": [
+        {
+          "fetchMs": 13.083749999999895,
+          "prepareMs": 0.4049170000000686,
+          "proofMs": 268.13749999999993,
+          "totalMs": 281.6261669999999,
+          "proofItems": 12,
+          "rssMiB": 146.390625
+        },
+        {
+          "fetchMs": 34.81925000000001,
+          "prepareMs": 0.38724999999999454,
+          "proofMs": 261.0469999999998,
+          "totalMs": 296.2534999999998,
+          "proofItems": 12,
+          "rssMiB": 181.65625
+        },
+        {
+          "fetchMs": 34.234709000000066,
+          "prepareMs": 0.48508300000003146,
+          "proofMs": 266.05087500000013,
+          "totalMs": 300.77066700000023,
+          "proofItems": 12,
+          "rssMiB": 191.234375
+        }
+      ]
+    }
+  ],
+  "runComplete": true,
+  "limitations": [
+    "Synthetic fixed-size entries; the distribution of real serialized registry entries was not measured.",
+    "Equivalent full-prefix SQL and portable proof function, not a timed 1Bridge route, Prisma transaction or signed checkpoint lookup.",
+    "One local Postgres container and Node process; no Vercel, Supabase pooler, remote network or concurrent-source load.",
+    "Three consecutive unrandomized trials per size; cache, JIT and RSS accumulation are uncontrolled.",
+    "RSS is a process snapshot after each trial, not an isolated peak allocation for that size."
+  ]
+}

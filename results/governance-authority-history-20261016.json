@@ -1,0 +1,79 @@
+{
+  "format": "1bridge.governance.authority-history-benchmark-summary/v1",
+  "recordedAt": "2026-10-16",
+  "applicationCommit": "2524b37a",
+  "authorityDependency": "github:drvillo/1bridge-authority#297f81d11ed3cee75f01d561a71da15de8e75697",
+  "command": "pnpm exec vitest bench --run --project stable test/perf/authority-history.bench.ts --outputJson=<file>",
+  "fixture": "10,001 signed policy revisions; prepared once outside each timed case",
+  "environment": {
+    "node": "26.5.0",
+    "vitest": "3.2.7",
+    "platform": "macOS-15.6-arm64-arm-64bit-Mach-O",
+    "processor": "Apple M4 Pro"
+  },
+  "limitation": "Vitest outputJson retained aggregate statistics and sample counts but not individual sample values. Four samples per case on one local host; no database, HTTP, cold function, Vercel or browser time is included.",
+  "vitest": {
+    "files": [
+      {
+        "filepath": "webapp/test/perf/authority-history.bench.ts",
+        "groups": [
+          {
+            "fullName": "test/perf/authority-history.bench.ts > 10,001 signed policy revisions",
+            "benchmarks": [
+              {
+                "id": "-1848207995_0_0",
+                "name": "review independently pinned history",
+                "rank": 1,
+                "rme": 1.5778929266392714,
+                "samples": [],
+                "totalTime": 15307.695833999998,
+                "min": 3770.337458,
+                "max": 3851.0732089999983,
+                "hz": 0.2613064724682849,
+                "period": 3826.9239584999996,
+                "mean": 3826.9239584999996,
+                "variance": 1440.5036564594764,
+                "sd": 37.95396759838787,
+                "sem": 18.976983799193935,
+                "df": 3,
+                "critical": 3.182,
+                "moe": 60.3847624490351,
+                "p75": 3845.4014590000006,
+                "p99": 3851.0732089999983,
+                "p995": 3851.0732089999983,
+                "p999": 3851.0732089999983,
+                "sampleCount": 4,
+                "median": 3843.1425835
+              },
+              {
+                "id": "-1848207995_0_1",
+                "name": "export independently pinned history",
+                "rank": 2,
+                "rme": 3.484577375436513,
+                "samples": [],
+                "totalTime": 15631.118209000007,
+                "min": 3809.1207920000015,
+                "max": 4002.4244580000013,
+                "hz": 0.2558997984991822,
+                "period": 3907.779552250002,
+                "mean": 3907.779552250002,
+                "variance": 7325.208284783097,
+                "sd": 85.58743064716394,
+                "sem": 42.79371532358197,
+                "df": 3,
+                "critical": 3.182,
+                "moe": 136.16960215963783,
+                "p75": 3950.2609169999996,
+                "p99": 4002.4244580000013,
+                "p995": 4002.4244580000013,
+                "p999": 4002.4244580000013,
+                "sampleCount": 4,
+                "median": 3909.7864795000023
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -11,6 +11,7 @@
     "analyze": "node scripts/analyze.mjs",
     "protocol:bench": "node experiments/protocol-bench.mjs",
     "governance:bench": "node experiments/governance-component-bench.mjs",
+    "registry-node-store:bench": "node experiments/registry-node-store-bench.mjs",
     "verify:private": "node scripts/verify-private.mjs",
     "build:papers": "bash scripts/build-papers.sh"
   },

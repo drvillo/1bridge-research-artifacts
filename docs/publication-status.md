@@ -1,8 +1,8 @@
-# Publication and evidence status — 9 October 2026
+# Publication and evidence status — 16 October 2026
 
 These are four separate **working technical reports**. They are prepared for [1Bridge](https://1bridgevault.com); independent review has not occurred. Public availability is not a claim of peer review, deployment certification, or established academic novelty.
 
-The manuscript drafts remain private pending the publication plan's independent-review requirement. The public repository releases experiments and raw evidence, not papers represented as reviewed or publication-ready.
+The manuscript source drafts remain in the private application repository. That application's current `main` includes earlier PDF versions as public-site assets, which may be served when deployed. The updated PDFs and source are in [app draft PR #137](https://github.com/drvillo/ubo-guard/pull/137); merging and deploying it would update those public assets. This research-artifacts repository releases experiments and raw evidence, and none of the reports has passed independent technical review.
 
 | Artifact | Completed in this revision | Remaining publication threshold |
 |---|---|---|
@@ -12,6 +12,14 @@ The manuscript drafts remain private pending the publication plan's independent-
 | Protocol specification | Established signed-envelope baseline; both bootstrap profiles; five adversarial/correctness tests; 100 local timing observations | Practical authenticated bootstrap; durable/concurrent state; explicit game-based model and reviewed proof; baseline comparisons; independently sufficient new result |
 
 The comparative and protocol manuscripts are **not ready to be presented as novel academic papers**. The former has only one executed application pilot. The latter implements standard mechanisms and explicitly documents their limits. If further work does not establish a gap and a sufficient contribution, keep them as technical reports.
+
+## Governance addendum at pinned revisions
+
+The four manuscript tracks at private application commit `49cbc09b` distinguish the earlier encryption baseline from the later D1–D4 implementation. The [repository map](governance-repository-map.md) pins the private application worktree, public [authority library](https://github.com/drvillo/1bridge-authority), public [compact observer](https://github.com/drvillo/1bridge-observer), and this evidence repository. The [research traceability map](governance-research-traceability.md) states the relationship to prior work and the narrower claims supported by this implementation. All four PDFs compiled and their pages were visually inspected. The manuscript changes remain in the app draft PR for authorized reviewers; its PDF outputs would be public site assets after merge and deployment. No independent technical review has occurred.
+
+The compact observer verifies publisher signatures and append-only consistency of global registry roots. It does not download customer feeds, inspect actor actions, or prove publication completeness. A customer uses a retained receipt, independently pinned keys, registry inclusion and signed feed continuation to review one action under an included prefix. Enterprise/Government strict mode strengthens that audit review without delaying releases. The implementation and local tests do not establish a live third-party deployment, independent pin delivery or a production freshness guarantee.
+
+The later benchmark evidence consists of a [four-sample-per-case authority-history summary](../results/governance-authority-history-20261016.json) and [three-trial-per-size registry-proof observations](../results/governance-compact-registry-proof-20261016.json). The first artifact lacks individual raw sample values; the second uses synthetic entries and a disposable Postgres container. Neither times a deployed Vercel function. Keep the older browser and activation results as a separate baseline.
 
 ## Evidence already collected
 

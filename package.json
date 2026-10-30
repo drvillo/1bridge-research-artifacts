@@ -10,10 +10,13 @@
     "bench": "node scripts/run-browser-bench.mjs",
     "analyze": "node scripts/analyze.mjs",
     "protocol:bench": "node experiments/protocol-bench.mjs",
+    "governance:bench": "node experiments/governance-component-bench.mjs",
+    "registry-node-store:bench": "node experiments/registry-node-store-bench.mjs",
     "verify:private": "node scripts/verify-private.mjs",
     "build:papers": "bash scripts/build-papers.sh"
   },
   "dependencies": {
+    "@drvillo/1bridge-authority": "github:drvillo/1bridge-authority#b48c9989b59f243b22c655b3d55b4ce0ae814f06",
     "@drvillo/webcrypto-seal": "0.2.1",
     "@noble/hashes": "2.2.0"
   },

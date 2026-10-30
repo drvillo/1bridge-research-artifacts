@@ -1,8 +1,8 @@
-# Publication and evidence status — 16 October 2026
+# Publication and evidence status — reconciled 30 October 2026
 
 These are four separate **working technical reports**. They are prepared for [1Bridge](https://1bridgevault.com); independent review has not occurred. Public availability is not a claim of peer review, deployment certification, or established academic novelty.
 
-The manuscript source drafts remain in the private application repository. That application's current `main` includes earlier PDF versions as public-site assets, which may be served when deployed. The updated PDFs and source are in [app draft PR #137](https://github.com/drvillo/ubo-guard/pull/137); merging and deploying it would update those public assets. This research-artifacts repository releases experiments and raw evidence, and none of the reports has passed independent technical review.
+The manuscript source drafts remain in the private application repository. The updated PDF assets and source from [merged app PR #137](https://github.com/drvillo/ubo-guard/pull/137) entered application `main` on 26 October 2026. The deployed PDF versions have not been verified. This research-artifacts repository releases experiments and raw evidence, and none of the reports has passed independent technical review.
 
 | Artifact | Completed in this revision | Remaining publication threshold |
 |---|---|---|
@@ -15,7 +15,7 @@ The comparative and protocol manuscripts are **not ready to be presented as nove
 
 ## Governance addendum at pinned revisions
 
-The four manuscript tracks at private application commit `49cbc09b` distinguish the earlier encryption baseline from the later D1–D4 implementation. The [repository map](governance-repository-map.md) pins the private application worktree, public [authority library](https://github.com/drvillo/1bridge-authority), public [compact observer](https://github.com/drvillo/1bridge-observer), and this evidence repository. The [research traceability map](governance-research-traceability.md) states the relationship to prior work and the narrower claims supported by this implementation. All four PDFs compiled and their pages were visually inspected. The manuscript changes remain in the app draft PR for authorized reviewers; its PDF outputs would be public site assets after merge and deployment. No independent technical review has occurred.
+The four manuscript tracks at private application commit `49cbc09b` distinguish the earlier encryption baseline from the later D1–D4 implementation. The [repository map](governance-repository-map.md) pins the private application worktree, public [authority library](https://github.com/drvillo/1bridge-authority), public [compact observer](https://github.com/drvillo/1bridge-observer), and this evidence repository. The [research traceability map](governance-research-traceability.md) states the relationship to prior work and the narrower claims supported by this implementation. All four PDFs compiled and their pages were visually inspected. The manuscript changes subsequently merged through app PR #137; its PDF outputs are application site assets, while deployed versions remain unverified. No independent technical review has occurred.
 
 The compact observer verifies publisher signatures and append-only consistency of global registry roots. It does not download customer feeds, inspect actor actions, or prove publication completeness. A customer uses a retained receipt, independently pinned keys, registry inclusion and signed feed continuation to review one action under an included prefix. Enterprise/Government strict mode strengthens that audit review without delaying releases. The implementation and local tests do not establish a live third-party deployment, independent pin delivery or a production freshness guarantee.
 
@@ -49,3 +49,7 @@ Do not fill missing coverage with emulated mobile devices, mock product policy, 
 The reviewer report should identify affiliation/funding, exact application and artifact revisions, installed dependency versions, source access, executed commands, boundary doubles, positive and negative results, excluded scenarios, and whether each claim is supported within its stated threat model. Source hashes identify examined artifacts; they do not prove correctness. A public library reproduction cannot be described as reproduction of the private application.
 
 Before release as reviewed papers: resolve citations, compile each manuscript, inspect every PDF page, reconcile numerical summaries with raw observations, and attach the review report. Compilation and visual review do not satisfy independent technical review.
+
+## Indexed registry evidence collected 30 October
+
+The [reconciliation report](governance-reconciliation-20261030.md) and [raw benchmark](../results/registry-node-store-benchmark-20261030.json) add scoped indexed-path measurements at pinned application `f44a051a`. Five trials per size and two warmups per size all verified against separately computed roots. This closes the missing local-run evidence item, with a small runner import fix; it does not close any independent review, manuscript publication or hosted deployment gate. Research PR #1 contains PR #2’s full commit and is the consolidation candidate.

@@ -1,0 +1,766 @@
+{
+  "format": "1bridge.governance.observer-scale/v1",
+  "recordedAt": "2026-10-15T16:17:50.474Z",
+  "observerCommit": "f918e09615cae5062d5eeb41bc80114a527758d3",
+  "observerDirty": false,
+  "authorityDependency": "github:drvillo/1bridge-authority#b48c9989b59f243b22c655b3d55b4ce0ae814f06",
+  "authorityBuildSha256": "2a0774548fb95f8d88698a8a19de02ce128d0a7c53383ddcaa561bdaf89ea50b",
+  "environment": {
+    "node": "v26.5.0",
+    "platform": "darwin",
+    "release": "24.6.0",
+    "cpuModel": "Apple M4 Pro",
+    "cpuCount": 12,
+    "postgresImage": "postgres@sha256:f4c66b820c6f974249089d3d16d86a3698eae11e8746eb6644b2271031e91232",
+    "postgresImageId": "sha256:97432f980da100ebd3e419711efee84e1e97a966d62c035286a07f239ddb4d9c",
+    "postgresImageArchitecture": "arm64",
+    "postgres": "17.11 (Debian 17.11-1.pgdg13+2)"
+  },
+  "options": {
+    "sizes": [
+      100,
+      1000,
+      10000
+    ],
+    "maxPolls": 150,
+    "budget": {
+      "maxLeafPages": 100,
+      "maxCheckpoints": 100,
+      "maxMs": 60000
+    }
+  },
+  "fixtureGenerationMs": 8248.593125,
+  "workload": "one root-signed null-policy revision and one provider-signed checkpoint per leaf",
+  "method": "Generate one signed policy-revision history, then for each prefix install a fresh observer schema and time each pollObserverOnce fixed-target invocation until accepted, a non-pending outcome, or the 150-call limit. The 60-second budget limits paging, not full call duration. Errors record their class without message or credentials. Fixture generation, source startup, schema installation, SQL validation and artifact writes are outside timed poll intervals. Each completed case is saved immediately.",
+  "cases": [
+    {
+      "size": 100,
+      "targetCheckpointHash": "2eba5b69c454a5a8b4f9360326a682e930fcc346eb9a418f4501d1ba63259127",
+      "outcome": "accepted",
+      "acceptedLeaves": 100,
+      "acceptedCheckpoints": 101,
+      "acceptedCheckpointHash": "2eba5b69c454a5a8b4f9360326a682e930fcc346eb9a418f4501d1ba63259127",
+      "persistedContiguous": true,
+      "totalPollMs": 303.1135409999988,
+      "polls": [
+        {
+          "invocation": 0,
+          "status": "pending",
+          "durationMs": 168.95858299999963,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 1,
+          "status": "accepted",
+          "durationMs": 134.15495799999917,
+          "httpRequests": 2
+        }
+      ]
+    },
+    {
+      "size": 1000,
+      "targetCheckpointHash": "2aded4a64128e8b453fcccd7f18b41480c8080d6c07ee33a56efbdb0d8f78b0b",
+      "outcome": "accepted",
+      "acceptedLeaves": 1000,
+      "acceptedCheckpoints": 1001,
+      "acceptedCheckpointHash": "2aded4a64128e8b453fcccd7f18b41480c8080d6c07ee33a56efbdb0d8f78b0b",
+      "persistedContiguous": true,
+      "totalPollMs": 2235.811000000007,
+      "polls": [
+        {
+          "invocation": 0,
+          "status": "pending",
+          "durationMs": 139.71116600000096,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 1,
+          "status": "pending",
+          "durationMs": 122.3997500000005,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 2,
+          "status": "pending",
+          "durationMs": 107.89275000000089,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 3,
+          "status": "pending",
+          "durationMs": 123.90029200000026,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 4,
+          "status": "pending",
+          "durationMs": 130.46662500000093,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 5,
+          "status": "pending",
+          "durationMs": 140.68425000000025,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 6,
+          "status": "pending",
+          "durationMs": 131.08945800000038,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 7,
+          "status": "pending",
+          "durationMs": 142.7615420000002,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 8,
+          "status": "pending",
+          "durationMs": 128.00216700000055,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 9,
+          "status": "pending",
+          "durationMs": 132.14279200000055,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 10,
+          "status": "accepted",
+          "durationMs": 936.7602080000015,
+          "httpRequests": 2
+        }
+      ]
+    },
+    {
+      "size": 10000,
+      "targetCheckpointHash": "7eec943d2f73e6c54c0c601c33b43188e4f17057295222750b68cfe1b68b365c",
+      "outcome": "accepted",
+      "acceptedLeaves": 10000,
+      "acceptedCheckpoints": 10001,
+      "acceptedCheckpointHash": "7eec943d2f73e6c54c0c601c33b43188e4f17057295222750b68cfe1b68b365c",
+      "persistedContiguous": true,
+      "totalPollMs": 24524.878953999993,
+      "polls": [
+        {
+          "invocation": 0,
+          "status": "pending",
+          "durationMs": 144.77250000000095,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 1,
+          "status": "pending",
+          "durationMs": 121.07754199999908,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 2,
+          "status": "pending",
+          "durationMs": 95.61945800000103,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 3,
+          "status": "pending",
+          "durationMs": 122.67145800000071,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 4,
+          "status": "pending",
+          "durationMs": 134.3196250000001,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 5,
+          "status": "pending",
+          "durationMs": 134.64366599999994,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 6,
+          "status": "pending",
+          "durationMs": 136.2766670000001,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 7,
+          "status": "pending",
+          "durationMs": 101.6614580000005,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 8,
+          "status": "pending",
+          "durationMs": 140.0152909999997,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 9,
+          "status": "pending",
+          "durationMs": 135.26908300000105,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 10,
+          "status": "pending",
+          "durationMs": 133.66749999999956,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 11,
+          "status": "pending",
+          "durationMs": 137.71299999999974,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 12,
+          "status": "pending",
+          "durationMs": 122.71891599999981,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 13,
+          "status": "pending",
+          "durationMs": 135.23829099999966,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 14,
+          "status": "pending",
+          "durationMs": 128.52408300000025,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 15,
+          "status": "pending",
+          "durationMs": 135.3657920000005,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 16,
+          "status": "pending",
+          "durationMs": 126.54612500000076,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 17,
+          "status": "pending",
+          "durationMs": 131.28612499999872,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 18,
+          "status": "pending",
+          "durationMs": 122.86574999999903,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 19,
+          "status": "pending",
+          "durationMs": 130.1543330000004,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 20,
+          "status": "pending",
+          "durationMs": 144.76133299999856,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 21,
+          "status": "pending",
+          "durationMs": 149.598915999999,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 22,
+          "status": "pending",
+          "durationMs": 138.76958399999967,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 23,
+          "status": "pending",
+          "durationMs": 138.97275000000081,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 24,
+          "status": "pending",
+          "durationMs": 142.0419579999998,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 25,
+          "status": "pending",
+          "durationMs": 134.44479200000023,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 26,
+          "status": "pending",
+          "durationMs": 148.59829199999876,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 27,
+          "status": "pending",
+          "durationMs": 142.57983299999978,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 28,
+          "status": "pending",
+          "durationMs": 145.09179100000074,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 29,
+          "status": "pending",
+          "durationMs": 154.5158330000013,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 30,
+          "status": "pending",
+          "durationMs": 167.64304099999936,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 31,
+          "status": "pending",
+          "durationMs": 158.00587499999892,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 32,
+          "status": "pending",
+          "durationMs": 150.76437500000065,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 33,
+          "status": "pending",
+          "durationMs": 149.40204099999937,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 34,
+          "status": "pending",
+          "durationMs": 160.91554200000064,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 35,
+          "status": "pending",
+          "durationMs": 144.9852920000012,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 36,
+          "status": "pending",
+          "durationMs": 134.76674999999886,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 37,
+          "status": "pending",
+          "durationMs": 145.98433400000067,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 38,
+          "status": "pending",
+          "durationMs": 153.6391250000015,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 39,
+          "status": "pending",
+          "durationMs": 165.48075000000244,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 40,
+          "status": "pending",
+          "durationMs": 143.00083300000188,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 41,
+          "status": "pending",
+          "durationMs": 135.33729099999982,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 42,
+          "status": "pending",
+          "durationMs": 156.2206670000014,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 43,
+          "status": "pending",
+          "durationMs": 151.48249999999825,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 44,
+          "status": "pending",
+          "durationMs": 128.36204100000032,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 45,
+          "status": "pending",
+          "durationMs": 134.421709000002,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 46,
+          "status": "pending",
+          "durationMs": 123.48366700000042,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 47,
+          "status": "pending",
+          "durationMs": 144.3090000000011,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 48,
+          "status": "pending",
+          "durationMs": 158.72291699999914,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 49,
+          "status": "pending",
+          "durationMs": 139.36475000000064,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 50,
+          "status": "pending",
+          "durationMs": 174.8382500000007,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 51,
+          "status": "pending",
+          "durationMs": 167.6025419999969,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 52,
+          "status": "pending",
+          "durationMs": 167.35912499999904,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 53,
+          "status": "pending",
+          "durationMs": 162.4230409999982,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 54,
+          "status": "pending",
+          "durationMs": 159.65708399999858,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 55,
+          "status": "pending",
+          "durationMs": 172.23291600000084,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 56,
+          "status": "pending",
+          "durationMs": 181.78487499999756,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 57,
+          "status": "pending",
+          "durationMs": 173.56633299999885,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 58,
+          "status": "pending",
+          "durationMs": 174.5314580000013,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 59,
+          "status": "pending",
+          "durationMs": 164.02083299999867,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 60,
+          "status": "pending",
+          "durationMs": 164.92533399999957,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 61,
+          "status": "pending",
+          "durationMs": 156.70220899999913,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 62,
+          "status": "pending",
+          "durationMs": 147.13029200000165,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 63,
+          "status": "pending",
+          "durationMs": 166.87233299999934,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 64,
+          "status": "pending",
+          "durationMs": 155.60116700000071,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 65,
+          "status": "pending",
+          "durationMs": 162.505374999997,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 66,
+          "status": "pending",
+          "durationMs": 179.61483299999963,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 67,
+          "status": "pending",
+          "durationMs": 180.98620799999844,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 68,
+          "status": "pending",
+          "durationMs": 166.38770899999872,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 69,
+          "status": "pending",
+          "durationMs": 176.84991699999955,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 70,
+          "status": "pending",
+          "durationMs": 151.515625,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 71,
+          "status": "pending",
+          "durationMs": 155.4813749999994,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 72,
+          "status": "pending",
+          "durationMs": 184.26820799999768,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 73,
+          "status": "pending",
+          "durationMs": 163.95687499999985,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 74,
+          "status": "pending",
+          "durationMs": 168.11375000000044,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 75,
+          "status": "pending",
+          "durationMs": 150.00691599999845,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 76,
+          "status": "pending",
+          "durationMs": 153.2360000000008,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 77,
+          "status": "pending",
+          "durationMs": 164.7802499999998,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 78,
+          "status": "pending",
+          "durationMs": 155.6684580000001,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 79,
+          "status": "pending",
+          "durationMs": 151.21829199999775,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 80,
+          "status": "pending",
+          "durationMs": 168.53600000000006,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 81,
+          "status": "pending",
+          "durationMs": 170.69579199999862,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 82,
+          "status": "pending",
+          "durationMs": 169.56666699999914,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 83,
+          "status": "pending",
+          "durationMs": 169.30895800000144,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 84,
+          "status": "pending",
+          "durationMs": 163.44558400000096,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 85,
+          "status": "pending",
+          "durationMs": 171.49112500000047,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 86,
+          "status": "pending",
+          "durationMs": 171.3522499999999,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 87,
+          "status": "pending",
+          "durationMs": 167.7089580000029,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 88,
+          "status": "pending",
+          "durationMs": 170.96816599999875,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 89,
+          "status": "pending",
+          "durationMs": 173.20595900000262,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 90,
+          "status": "pending",
+          "durationMs": 176.65783300000112,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 91,
+          "status": "pending",
+          "durationMs": 173.15829200000007,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 92,
+          "status": "pending",
+          "durationMs": 174.9494999999988,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 93,
+          "status": "pending",
+          "durationMs": 172.7859580000004,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 94,
+          "status": "pending",
+          "durationMs": 192.49112500000047,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 95,
+          "status": "pending",
+          "durationMs": 172.26866700000028,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 96,
+          "status": "pending",
+          "durationMs": 173.57816699999967,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 97,
+          "status": "pending",
+          "durationMs": 177.17404199999874,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 98,
+          "status": "pending",
+          "durationMs": 164.7265830000033,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 99,
+          "status": "pending",
+          "durationMs": 158.89124999999694,
+          "httpRequests": 14
+        },
+        {
+          "invocation": 100,
+          "status": "accepted",
+          "durationMs": 9182.006249999999,
+          "httpRequests": 2
+        }
+      ]
+    }
+  ],
+  "runComplete": true,
+  "limitations": [
+    "Synthetic policy revisions, not a measured distribution of signed sharing and recovery actions.",
+    "One feed with a supplied fixed target; registry discovery, multi-tenant scheduling and report generation are excluded.",
+    "The direct poll uses 100 checkpoint items per invocation, while the current Vercel shared route uses 12.",
+    "The 60-second budget applies to paging; acceptance replay and lease cleanup can extend call wall time.",
+    "Loopback HTTP and local Postgres do not measure Vercel, Supabase pooler or internet latency.",
+    "One run per size without randomization or outlier analysis; host cache, JIT and thermal effects are uncontrolled."
+  ]
+}

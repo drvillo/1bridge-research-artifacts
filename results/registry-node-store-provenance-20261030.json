@@ -1,0 +1,38 @@
+{
+  "format": "1bridge.governance.registry-node-store-provenance/v1",
+  "researchRevision": "c0fb0e7edf8da89a4474842eb3e2c36773218e4f",
+  "appRevision": "f44a051a2539a2be930ad55f218002b25a9cd104",
+  "appFilesSha256": {
+    "webapp/package.json": "2130c1b19e0f52897146ca3f5e129e0e03f1c1f61c48071549c22b00c42ab0c2",
+    "webapp/pnpm-lock.yaml": "f2127f1a134c6c0f34b1d2c23b3e2dc93d8a52baf2337042a8c6546af8fe5698",
+    "webapp/prisma/schema.prisma": "97903e6e2d1f7f04d32c795783fd512acd7e2ba58ae631d0b5d1f38fcc89e560",
+    "webapp/prisma/migrations/20261020160000_authority_registry_merkle_nodes/migration.sql": "4c446d58861339867363de865388e3bca290b73199ba656e16770cc0f818323c"
+  },
+  "runnerFilesSha256": {
+    "experiments/registry-node-store-bench.mjs": "524ae8af8fd093e3cab80dbf4a370c3ca289ff6a196fc48f32a90a5cbad5a441",
+    "experiments/private-registry-node-store.mjs": "3b9f94195d68dc0ea0f288edb551a7b73208e5951ec77a647fb2f423f9d06f85"
+  },
+  "runnerChange": "One local bundler alias: next/server -> next/server.js; original smoke run failed ERR_MODULE_NOT_FOUND, corrected smoke passed. Application code unchanged.",
+  "authorityDependency": "github:drvillo/1bridge-authority#297f81d11ed3cee75f01d561a71da15de8e75697",
+  "authorityBuildSha256": "204e58bcc1363f188715dc40bad202b5d5515feb955e4ec7cb2b2ad5c69a0a99",
+  "authorityBuildDigestMethod": "SHA-256 over package.json then sorted dist/*.js, each relative filename + NUL + bytes + NUL",
+  "packageManager": "pnpm 10.29.3",
+  "install": "Frozen lockfiles; installed with pinned pnpm on PATH including git dependency prepare scripts. Default pnpm 11 setup attempts failed before correction.",
+  "postgresImageDigest": "postgres@sha256:839fbb5a4942a7758dd93e18b42ea5649807491a0545b5eeeb8f0b8bb11857a5",
+  "kernel": "6.18.57",
+  "mergeCommit": "d6c46df74985873ead73d84785049ed22d5f9221",
+  "mergeScope": "Three measured application source files unchanged at merge; authority dependency changed to npm 0.1.0. Results apply to the pinned benchmark environment.",
+  "resultSha256": "ddb10f5dc260f1c47ae2e6fcd6f3271ca6ffa7c254978f3b4d3de076216d06bf",
+  "appCleanBeforeRun": true,
+  "postgresImageId": "sha256:99445113a4a19e82dd3713c65bd9f6fb5bf972065ab043df8d1e1c93e957da9a",
+  "benchmarkCommand": "ONEBRIDGE_SOURCE=/workspace/ubo-guard-benchmark ONEBRIDGE_REGISTRY_DATABASE_URL=<disposable loopback database bridge_research_registry_20261030 on port 55439> REGISTRY_NODE_STORE_OUT=results/registry-node-store-benchmark-20261030.json pnpm registry-node-store:bench",
+  "concurrency": "Full application tests, lint and typecheck finished before the final benchmark; no other task workload intentionally ran concurrently.",
+  "sourceHashesVerified": true,
+  "verificationLogSha256": {
+    "app-tests.log": "540edeaae77d6e3bf71a48d0878176ed1eebc48574c9fe763c4d49d0487d7b76",
+    "app-lint.log": "9a5f35421e5bd4778f281cec1b1c4489d5e87b01eec0a53dbca3899cf36e4842",
+    "app-typecheck.log": "5e7ef21327170f77179ddd4bea92a5a0329658e48958df97a809eb88eb9d2d9c",
+    "benchmark.log": "8549673e8e970b651eed4d6d7ead7703aae3ec704f0a3a3bb16505a16f6d627f",
+    "smell-scan.log": "5397bc2bf3e8c95002633126f8e4384884ef73896c312ec536ffc89edd5b7837"
+  }
+}

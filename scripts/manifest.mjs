@@ -1,7 +1,7 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 
-const files = ['README.md', 'LICENSE', '.gitignore', 'package.json', 'pnpm-lock.yaml'];
+const files = ['README.md', 'LICENSE', '.gitignore', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml'];
 for (const directory of ['docs', 'results', 'scripts', 'experiments', 'protocol', 'test']) {
   for (const file of await readdir(directory)) {
     if (file === 'artifact-manifest.json' || !/\.(md|tex|pdf|json|mjs|py|sh)$/.test(file)) continue;

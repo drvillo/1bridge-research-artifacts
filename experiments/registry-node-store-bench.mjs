@@ -36,6 +36,7 @@ await build({
   alias: {
     'private-registry': adapter,
     '@': path.join(webapp, 'src'),
+    'next/server': 'next/server.js',
   },
   logLevel: 'silent',
 })

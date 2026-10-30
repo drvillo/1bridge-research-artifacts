@@ -1,0 +1,239 @@
+{
+  "format": "1bridge.governance.registry-node-store-benchmark/v1",
+  "appRevision": "f44a051a2539a2be930ad55f218002b25a9cd104",
+  "sourceSha256": {
+    "registry-source.ts": "2e965797ce3d9ddd13a2ce80c1af69921cdb7673896863ce1e30e6fc25af525b",
+    "registry-merkle.ts": "79536398a0348c79b6e10a93b9356b87d5dab103d48e9a8e59ffe1bcfda55604",
+    "registry-node-store.ts": "aec552ca75a45b8c3251479881d1217bc339606e10d980ce02cc42399db6d780"
+  },
+  "recordedAt": "2026-10-30T14:00:51.087Z",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64",
+    "cpuModel": "AMD EPYC 9V45 96-Core Processor",
+    "cpuCount": 5,
+    "postgres": "17.11 (Debian 17.11-1.pgdg12+2)"
+  },
+  "options": {
+    "sizes": [
+      100,
+      1000,
+      10000,
+      100000
+    ],
+    "trialsPerSize": 5,
+    "warmups": 2,
+    "bytesPerEntry": 512,
+    "oldSize": "floor(size / 2)"
+  },
+  "method": "Actual application readRegistryConsistency, buildRegistryConsistencyProof, and readRegistryRangeHash bundled from the pinned private revision. Indexed leaf and persisted subtree lookups run on disposable loopback PostgreSQL with production-shaped primary keys. Synthetic fixture generation, schema setup, independent root computation, and external verification are outside timed calls.",
+  "limitations": [
+    "Minimal isolated authority tables reproduce the queried columns and primary keys, not the complete application migrations or production data distribution.",
+    "No Next route, Supabase network, Vercel deployment, concurrency, or production latency is measured.",
+    "RSS and heap are process snapshots, not per-request allocations or peak memory attribution."
+  ],
+  "cases": [
+    {
+      "size": 100,
+      "oldSize": 50,
+      "entries": 100,
+      "persistedNodes": 97,
+      "measurements": [
+        {
+          "durationMs": 2.8329980000000035,
+          "proofItems": 7,
+          "rssBeforeMiB": 76.9765625,
+          "rssAfterMiB": 76.9765625,
+          "heapBeforeMiB": 12.0767822265625,
+          "heapAfterMiB": 12.362884521484375
+        },
+        {
+          "durationMs": 3.6889130000000137,
+          "proofItems": 7,
+          "rssBeforeMiB": 76.9765625,
+          "rssAfterMiB": 76.9765625,
+          "heapBeforeMiB": 12.074073791503906,
+          "heapAfterMiB": 12.366065979003906
+        },
+        {
+          "durationMs": 2.735963999999967,
+          "proofItems": 7,
+          "rssBeforeMiB": 76.9765625,
+          "rssAfterMiB": 76.9765625,
+          "heapBeforeMiB": 12.08447265625,
+          "heapAfterMiB": 12.380874633789062
+        },
+        {
+          "durationMs": 2.455966999999987,
+          "proofItems": 7,
+          "rssBeforeMiB": 76.9765625,
+          "rssAfterMiB": 76.9765625,
+          "heapBeforeMiB": 12.009750366210938,
+          "heapAfterMiB": 12.295082092285156
+        },
+        {
+          "durationMs": 2.612259999999992,
+          "proofItems": 7,
+          "rssBeforeMiB": 77.1015625,
+          "rssAfterMiB": 77.2265625,
+          "heapBeforeMiB": 12.007545471191406,
+          "heapAfterMiB": 12.295364379882812
+        }
+      ],
+      "medianMs": 2.735963999999967,
+      "proofVerified": true
+    },
+    {
+      "size": 1000,
+      "oldSize": 500,
+      "entries": 1000,
+      "persistedNodes": 994,
+      "measurements": [
+        {
+          "durationMs": 3.7365439999999808,
+          "proofItems": 9,
+          "rssBeforeMiB": 90.4765625,
+          "rssAfterMiB": 90.4765625,
+          "heapBeforeMiB": 13.378089904785156,
+          "heapAfterMiB": 13.800216674804688
+        },
+        {
+          "durationMs": 2.9844139999999584,
+          "proofItems": 9,
+          "rssBeforeMiB": 89.765625,
+          "rssAfterMiB": 89.765625,
+          "heapBeforeMiB": 12.555198669433594,
+          "heapAfterMiB": 12.975685119628906
+        },
+        {
+          "durationMs": 4.914446999999996,
+          "proofItems": 9,
+          "rssBeforeMiB": 89.765625,
+          "rssAfterMiB": 90.515625,
+          "heapBeforeMiB": 12.512466430664062,
+          "heapAfterMiB": 12.933906555175781
+        },
+        {
+          "durationMs": 4.024583000000007,
+          "proofItems": 9,
+          "rssBeforeMiB": 90.640625,
+          "rssAfterMiB": 90.640625,
+          "heapBeforeMiB": 12.512611389160156,
+          "heapAfterMiB": 12.947731018066406
+        },
+        {
+          "durationMs": 3.591177000000016,
+          "proofItems": 9,
+          "rssBeforeMiB": 90.640625,
+          "rssAfterMiB": 90.640625,
+          "heapBeforeMiB": 12.517433166503906,
+          "heapAfterMiB": 12.938438415527344
+        }
+      ],
+      "medianMs": 3.7365439999999808,
+      "proofVerified": true
+    },
+    {
+      "size": 10000,
+      "oldSize": 5000,
+      "entries": 10000,
+      "persistedNodes": 9995,
+      "measurements": [
+        {
+          "durationMs": 8.877267999999958,
+          "proofItems": 12,
+          "rssBeforeMiB": 141.58984375,
+          "rssAfterMiB": 141.58984375,
+          "heapBeforeMiB": 17.000167846679688,
+          "heapAfterMiB": 17.459190368652344
+        },
+        {
+          "durationMs": 9.211876999999959,
+          "proofItems": 12,
+          "rssBeforeMiB": 141.58984375,
+          "rssAfterMiB": 141.71484375,
+          "heapBeforeMiB": 16.63629913330078,
+          "heapAfterMiB": 17.09424591064453
+        },
+        {
+          "durationMs": 8.638451999999916,
+          "proofItems": 12,
+          "rssBeforeMiB": 141.71484375,
+          "rssAfterMiB": 141.71484375,
+          "heapBeforeMiB": 16.640182495117188,
+          "heapAfterMiB": 17.096481323242188
+        },
+        {
+          "durationMs": 6.800886999999875,
+          "proofItems": 12,
+          "rssBeforeMiB": 141.71484375,
+          "rssAfterMiB": 141.71484375,
+          "heapBeforeMiB": 16.6400146484375,
+          "heapAfterMiB": 17.087799072265625
+        },
+        {
+          "durationMs": 3.7123979999998937,
+          "proofItems": 12,
+          "rssBeforeMiB": 141.83984375,
+          "rssAfterMiB": 141.83984375,
+          "heapBeforeMiB": 16.63843536376953,
+          "heapAfterMiB": 17.09673309326172
+        }
+      ],
+      "medianMs": 8.638451999999916,
+      "proofVerified": true
+    },
+    {
+      "size": 100000,
+      "oldSize": 50000,
+      "entries": 100000,
+      "persistedNodes": 99994,
+      "measurements": [
+        {
+          "durationMs": 5.804063999999926,
+          "proofItems": 14,
+          "rssBeforeMiB": 456.84765625,
+          "rssAfterMiB": 456.84765625,
+          "heapBeforeMiB": 55.83222198486328,
+          "heapAfterMiB": 56.34697723388672
+        },
+        {
+          "durationMs": 5.213804000000891,
+          "proofItems": 14,
+          "rssBeforeMiB": 456.83984375,
+          "rssAfterMiB": 456.83984375,
+          "heapBeforeMiB": 55.6793212890625,
+          "heapAfterMiB": 56.1927490234375
+        },
+        {
+          "durationMs": 5.428944999999658,
+          "proofItems": 14,
+          "rssBeforeMiB": 456.83984375,
+          "rssAfterMiB": 456.83984375,
+          "heapBeforeMiB": 55.67059326171875,
+          "heapAfterMiB": 56.186737060546875
+        },
+        {
+          "durationMs": 4.40400800000134,
+          "proofItems": 14,
+          "rssBeforeMiB": 456.83984375,
+          "rssAfterMiB": 456.83984375,
+          "heapBeforeMiB": 55.681785583496094,
+          "heapAfterMiB": 56.19536590576172
+        },
+        {
+          "durationMs": 5.259190999999191,
+          "proofItems": 14,
+          "rssBeforeMiB": 456.83984375,
+          "rssAfterMiB": 456.83984375,
+          "heapBeforeMiB": 55.67335510253906,
+          "heapAfterMiB": 56.18672180175781
+        }
+      ],
+      "medianMs": 5.259190999999191,
+      "proofVerified": true
+    }
+  ],
+  "runComplete": true
+}
